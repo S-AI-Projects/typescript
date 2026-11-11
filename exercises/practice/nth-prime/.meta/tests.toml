@@ -4,12 +4,15 @@
 
 [75c65189-8aef-471a-81de-0a90c728160c]
 description = "first prime"
+comment = "Included because finding the 1st prime (2) is a basic canonical case. Expected result is 2. The TypeScript reference implementation supports this by filtering primes and accessing index [nthPrime - 1] (1 - 1 = 0), returning 2."
 
 [2c38804c-295f-4701-b728-56dea34fd1a0]
 description = "second prime"
+comment = "Included because finding the 2nd prime (3) tests the next sequential prime. Expected result is 3. The TypeScript reference implementation supports this by accessing index [nthPrime - 1] (2 - 1 = 1) from the filtered primes array, returning 3. Jest test uses xit for learner TDD progression."
 
 [56692534-781e-4e8c-b1f9-3e82c1640259]
 description = "sixth prime"
+comment = "Included because finding the 6th prime (13) matches the example in instructions. Expected result is 13. The TypeScript reference implementation supports this by accessing index [nthPrime - 1] (6 - 1 = 5) from the filtered primes array, returning 13. Jest test uses xit for learner TDD progression."
 
 [fce1e979-0edb-412d-93aa-2c744e8f50ff]
 description = "big prime"
