@@ -1,0 +1,23 @@
+{
+  "task": "R47-T041",
+  "exercise": "exercises/practice/raindrops",
+  "reference_substituted": {
+    "raindrops.ts": ".meta/proof.ci.ts"
+  },
+  "tool_versions": {
+    "node": "v24.22.1",
+    "yarn": "4.5.1",
+    "npm": "10.9.4",
+    "python": "3.12.3"
+  },
+  "runner_used": "npm install + tsc + jest (test-runner steps)",
+  "expected": "all enabled exercise cases pass against the reference",
+  "actual": {
+    "tests_total": 16,
+    "tests_passed": 16,
+    "tests_failed": 0,
+    "tests_skipped": 0
+  },
+  "failures": [],
+  "result": "PASS"
+}
