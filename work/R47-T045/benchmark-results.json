@@ -1,0 +1,61 @@
+{
+  "node": "v24.22.1",
+  "fixedSliceLength": [
+    {
+      "n": 1000,
+      "k": 5,
+      "slices": 996,
+      "elementsCopied": 4980,
+      "medianMs": 0.111,
+      "minMs": 0.054,
+      "reps": 7
+    },
+    {
+      "n": 10000,
+      "k": 5,
+      "slices": 9996,
+      "elementsCopied": 49980,
+      "medianMs": 1.36,
+      "minMs": 0.851,
+      "reps": 7
+    },
+    {
+      "n": 100000,
+      "k": 5,
+      "slices": 99996,
+      "elementsCopied": 499980,
+      "medianMs": 27.049,
+      "minMs": 5.511,
+      "reps": 7
+    }
+  ],
+  "halfLengthSlice": [
+    {
+      "n": 200,
+      "k": 100,
+      "slices": 101,
+      "elementsCopied": 10100,
+      "medianMs": 0.072,
+      "minMs": 0.07,
+      "reps": 7
+    },
+    {
+      "n": 2000,
+      "k": 1000,
+      "slices": 1001,
+      "elementsCopied": 1001000,
+      "medianMs": 7.321,
+      "minMs": 5.558,
+      "reps": 7
+    },
+    {
+      "n": 8000,
+      "k": 4000,
+      "slices": 4001,
+      "elementsCopied": 16004000,
+      "medianMs": 240.933,
+      "minMs": 133.876,
+      "reps": 7
+    }
+  ]
+}
