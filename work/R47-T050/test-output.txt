@@ -1,0 +1,58 @@
+tool versions: {'node': 'v24.22.1', 'yarn': '4.5.1', 'npm': '10.9.4', 'python': '3.12.3'}
+substituted .meta/proof.ci.ts -> kindergarten-garden.ts
+enabled all cases in kindergarten-garden.test.ts
+$ corepack yarn install (exit 1)
+➤ YN0000: · Yarn 4.5.1
+➤ YN0000: ┌ Resolution step
+➤ YN0001: │ Error: write EPROTO 40CD0F20AD7B0000:error:0A00010B:SSL routines:tls_validate_record_header:wrong version number:../deps/openssl/openssl/ssl/record/methods/tlsany_meth.c:77:
+
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:51:19)
+➤ YN0000: └ Completed
+➤ YN0000: · Failed with errors in 0s 160ms
+
+$ npm install (exit 0)
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 576 packages in 11s
+
+$ npx tsc --noEmit -p . (exit 0)
+
+$ npx jest --no-cache (exit 0)
+PASS ./kindergarten-garden.test.ts
+  partial Garden
+    ✓ garden with single student (3 ms)
+    ✓ different garden with single student (1 ms)
+    ✓ garden with two students
+    multiple students for the same garden with three students
+      ✓ second student's garden (1 ms)
+      ✓ third student's garden
+  full garden
+    ✓ for Alice, first student's garden
+    ✓ for Bob, second student's garden
+    ✓ for Charlie (1 ms)
+    ✓ for David
+    ✓ for Eve (1 ms)
+    ✓ for Fred
+    ✓ for Ginny
+    ✓ for Harriet (1 ms)
+    ✓ for Ileana
+    ✓ for Joseph
+    ✓ for Kincaid, second to last student's garden (1 ms)
+    ✓ for Larry, last student's garden
+  disordered class
+    ✓ for Patricia
+    ✓ for Roger
+    ✓ for Samantha
+    ✓ for Xander (1 ms)
+  Two gardens, different students
+    ✓ Bob and Charlie for each garden
+
+Test Suites: 1 passed, 1 total
+Tests:       22 passed, 22 total
+Snapshots:   0 total
+Time:        0.836 s
+Ran all test suites.
+
+jest summary: total=22 passed=22 failed=0 skipped=0
