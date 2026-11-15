@@ -1,0 +1,39 @@
+{
+  "reference": {
+    "mode": "reference",
+    "cleaned_up": true,
+    "runner": "npm install + tsc + jest",
+    "tests_total": 16,
+    "tests_passed": 16,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "child_exit": 0,
+    "exit": 0,
+    "learner_files_unchanged": true
+  },
+  "broken_reference": {
+    "mode": "broken",
+    "cleaned_up": true,
+    "runner": "npm install + tsc + jest",
+    "tests_total": 16,
+    "tests_passed": 0,
+    "tests_failed": 16,
+    "tests_skipped": 0,
+    "child_exit": 1,
+    "exit": 1,
+    "learner_files_unchanged": true
+  },
+  "empty_selection": {
+    "mode": "empty",
+    "cleaned_up": true,
+    "runner": "npm install + tsc + jest",
+    "tests_total": 16,
+    "tests_passed": 0,
+    "tests_failed": 0,
+    "tests_skipped": 16,
+    "child_exit": 0,
+    "exit": 1,
+    "learner_files_unchanged": true
+  },
+  "self_test": "PASS"
+}
