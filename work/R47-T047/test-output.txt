@@ -1,0 +1,45 @@
+tool versions: {'node': 'v24.22.1', 'yarn': '4.5.1', 'npm': '10.9.4', 'python': '3.12.3'}
+substituted .meta/proof.ci.ts -> pascals-triangle.ts
+enabled all cases in pascals-triangle.test.ts
+$ corepack yarn install (exit 1)
+➤ YN0000: · Yarn 4.5.1
+➤ YN0000: ┌ Resolution step
+➤ YN0001: │ Error: write EPROTO 40DDBBD1C4740000:error:0A00010B:SSL routines:tls_validate_record_header:wrong version number:../deps/openssl/openssl/ssl/record/methods/tlsany_meth.c:77:
+
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:51:19)
+➤ YN0000: └ Completed
+➤ YN0000: · Failed with errors in 0s 159ms
+
+$ npm install (exit 0)
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 576 packages in 13s
+
+$ npx tsc --noEmit -p . (exit 0)
+
+$ npx jest --no-cache (exit 0)
+PASS ./pascals-triangle.test.ts
+  Triangle
+    ✓ with one row (4 ms)
+    ✓ with two rows
+    ✓ with three rows (1 ms)
+    ✓ last row
+    ✓ fifth row (1 ms)
+    ✓ twentieth row
+
+Test Suites: 1 passed, 1 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        0.723 s
+Ran all test suites.
+
+jest summary: total=6 passed=6 failed=0 skipped=0
+$ tsc readonly-static.ts (exit 2)
+readonly-static.ts(5,7): error TS2540: Cannot assign to 'scores' because it is a read-only property.
+
+$ node readonly-runtime.js (exit 0)
+[ 1, 2, 3 ]
+[ 9 ]
+
