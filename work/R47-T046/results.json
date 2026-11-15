@@ -1,0 +1,23 @@
+{
+  "task": "R47-T046",
+  "exercise": "exercises/practice/crypto-square",
+  "reference_substituted": {
+    "crypto-square.ts": ".meta/proof.ci.ts"
+  },
+  "tool_versions": {
+    "node": "v24.22.1",
+    "yarn": "4.5.1",
+    "npm": "10.9.4",
+    "python": "3.12.3"
+  },
+  "runner_used": "npm install + tsc + jest (test-runner steps)",
+  "expected": "all enabled exercise cases pass against the reference",
+  "actual": {
+    "tests_total": 8,
+    "tests_passed": 7,
+    "tests_failed": 0,
+    "tests_skipped": 1
+  },
+  "failures": [],
+  "result": "PASS"
+}
