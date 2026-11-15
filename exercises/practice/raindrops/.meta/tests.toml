@@ -4,12 +4,15 @@
 
 [1575d549-e502-46d4-a8e1-6b7bec6123d8]
 description = "the sound for 1 is 1"
+comment = "Maps to test 'converts 1' in raindrops.test.ts. 1 is divisible by none of 3, 5 or 7, so no sound is appended and the reference falls back to drops.toString(); this is the selected case that covers the no-factor fallback branch, where the number itself is stringified."
 
 [1f51a9f9-4895-4539-b182-d7b0a5ab2913]
 description = "the sound for 3 is Pling"
+comment = "Maps to test 'converts 3' in raindrops.test.ts. 3 is the smallest input with a factor of 3, so it covers the first conditional (drops % 3 === 0 appends 'Pling') in isolation, with no concatenation from the 5 or 7 branches."
 
 [2d9bfae5-2b21-4bcd-9629-c8c0e388f3e0]
 description = "the sound for 5 is Plang"
+comment = "Maps to test 'converts 5' in raindrops.test.ts. 5 is the smallest input with a factor of 5 and no factor of 3 (5 % 3 !== 0), so it covers the second conditional (drops % 5 === 0 appends 'Plang') independently and proves 'Plang' is not a side effect of the 3 branch."
 
 [d7e60daa-32ef-4c23-b688-2abff46c4806]
 description = "the sound for 7 is Plong"
