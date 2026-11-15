@@ -1,0 +1,1272 @@
+tool versions: {'node': 'v24.22.1', 'yarn': '4.5.1', 'npm': '10.9.4', 'python': '3.12.3'}
+substituted .meta/proof.ci.ts -> word-search.ts
+enabled all cases in word-search.test.ts
+$ corepack yarn install (exit 1)
+➤ YN0000: · Yarn 4.5.1
+➤ YN0000: ┌ Resolution step
+➤ YN0001: │ Error: write EPROTO 40ED6AF5957A0000:error:0A00010B:SSL routines:tls_validate_record_header:wrong version number:../deps/openssl/openssl/ssl/record/methods/tlsany_meth.c:77:
+
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:51:19)
+➤ YN0000: └ Completed
+➤ YN0000: · Failed with errors in 0s 126ms
+
+$ npm install (exit 0)
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 576 packages in 31s
+
+$ npx tsc --noEmit -p . (exit 0)
+
+$ npx jest --no-cache (exit 0)
+PASS ./word-search.test.ts
+  single line grids
+    ✓ should accept an initial game grid (3 ms)
+    ✓ should accept a target search word (1 ms)
+    ✓ should locate a word written left to right (1 ms)
+    ✓ should locate the same word written left to right in a different position
+    ✓ should locate a different left to right word
+    ✓ should locate that different left to right word in a different position (1 ms)
+  multi line grids
+    ✓ should locate a left to right word in a two line grid
+    ✓ should locate a left to right word in a different position in a two line grid (1 ms)
+    ✓ should locate a left to right word in a three line grid (1 ms)
+    ✓ should locate a left to right word in a ten line grid (1 ms)
+    ✓ should locate a left to right word in a different position in a ten line grid
+    ✓ should locate a different left to right word in a ten line grid (1 ms)
+  multiple words
+    ✓ should locate two words written left to right
+  different directions
+    ✓ should locate a single word written right to left
+    ✓ should locate multiple words written in different horizontal directions (1 ms)
+  vertical directions
+    ✓ should locate words written top to bottom (1 ms)
+    ✓ should locate words written bottom to top (1 ms)
+    ✓ should locate words written top left to bottom right (1 ms)
+    ✓ should locate words written bottom right to top left (1 ms)
+    ✓ should locate words written bottom left to top right
+    ✓ should locate words written top right to bottom left
+  avoiding false-positives
+    ✓ should fail to locate a word that is not in the puzzle
+    ✓ should fail to locate words that are not on horizontal, vertical, or diagonal lines
+    ✓ should not concatenate different lines to find a horizontal word (1 ms)
+    ✓ should not wrap around horizontally to find a word
+    ✓ should not wrap around vertically to find a word
+
+Test Suites: 1 passed, 1 total
+Tests:       26 passed, 26 total
+Snapshots:   0 total
+Time:        0.751 s
+Ran all test suites.
+
+jest summary (reference): total=26 passed=26 failed=0 skipped=0
+$ mutant test run (exit 1)
+FAIL ./word-search.test.ts
+  single line grids
+    ✓ should accept an initial game grid (3 ms)
+    ✓ should accept a target search word (1 ms)
+    ✕ should locate a word written left to right (6 ms)
+    ✕ should locate the same word written left to right in a different position (1 ms)
+    ✕ should locate a different left to right word (1 ms)
+    ✕ should locate that different left to right word in a different position (2 ms)
+  multi line grids
+    ✕ should locate a left to right word in a two line grid (1 ms)
+    ✕ should locate a left to right word in a different position in a two line grid (1 ms)
+    ✕ should locate a left to right word in a three line grid (1 ms)
+    ✕ should locate a left to right word in a ten line grid (1 ms)
+    ✕ should locate a left to right word in a different position in a ten line grid (1 ms)
+    ✕ should locate a different left to right word in a ten line grid (1 ms)
+  multiple words
+    ✕ should locate two words written left to right (2 ms)
+  different directions
+    ✕ should locate a single word written right to left (1 ms)
+    ✕ should locate multiple words written in different horizontal directions (1 ms)
+  vertical directions
+    ✕ should locate words written top to bottom (2 ms)
+    ✕ should locate words written bottom to top (2 ms)
+    ✕ should locate words written top left to bottom right (2 ms)
+    ✕ should locate words written bottom right to top left (2 ms)
+    ✕ should locate words written bottom left to top right (2 ms)
+    ✕ should locate words written top right to bottom left (3 ms)
+  avoiding false-positives
+    ✕ should fail to locate a word that is not in the puzzle (3 ms)
+    ✓ should fail to locate words that are not on horizontal, vertical, or diagonal lines (1 ms)
+    ✓ should not concatenate different lines to find a horizontal word
+    ✓ should not wrap around horizontally to find a word
+    ✓ should not wrap around vertically to find a word
+
+  ● single line grids › should locate a word written left to right
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       1,
+    -       7,
+    +       0,
+    +       6,
+          ],
+          "start": Array [
+    -       1,
+    -       1,
+    +       0,
+    +       0,
+          ],
+        },
+      }
+
+    [0m [90m 27 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 28 |[39m
+    [31m[1m>[22m[39m[90m 29 |[39m     expect(wordSearch[33m.[39mfind([[32m'clojure'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m    |[39m                                          [31m[1m^[22m[39m
+     [90m 30 |[39m   })
+     [90m 31 |[39m
+     [90m 32 |[39m   it([32m'should locate the same word written left to right in a different position'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:29:42)
+
+  ● single line grids › should locate the same word written left to right in a different position
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       1,
+    -       9,
+    +       0,
+    +       8,
+          ],
+          "start": Array [
+    -       1,
+    -       3,
+    +       0,
+    +       2,
+          ],
+        },
+      }
+
+    [0m [90m 40 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 41 |[39m
+    [31m[1m>[22m[39m[90m 42 |[39m     expect(wordSearch[33m.[39mfind([[32m'clojure'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m    |[39m                                          [31m[1m^[22m[39m
+     [90m 43 |[39m   })
+     [90m 44 |[39m
+     [90m 45 |[39m   it([32m'should locate a different left to right word'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:42:42)
+
+  ● single line grids › should locate a different left to right word
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+        "coffee": Object {
+          "end": Array [
+    -       1,
+    -       6,
+    +       0,
+    +       5,
+          ],
+          "start": Array [
+    -       1,
+    -       1,
+    +       0,
+    +       0,
+          ],
+        },
+      }
+
+    [0m [90m 53 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 54 |[39m
+    [31m[1m>[22m[39m[90m 55 |[39m     expect(wordSearch[33m.[39mfind([[32m'coffee'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m    |[39m                                         [31m[1m^[22m[39m
+     [90m 56 |[39m   })
+     [90m 57 |[39m
+     [90m 58 |[39m   it([32m'should locate that different left to right word in a different position'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:55:41)
+
+  ● single line grids › should locate that different left to right word in a different position
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 3
+    + Received  + 3
+
+      Object {
+        "coffee": Object {
+          "end": Array [
+    -       1,
+    -       7,
+    +       0,
+    +       6,
+          ],
+          "start": Array [
+    +       0,
+            1,
+    -       2,
+          ],
+        },
+      }
+
+    [0m [90m 66 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 67 |[39m
+    [31m[1m>[22m[39m[90m 68 |[39m     expect(wordSearch[33m.[39mfind([[32m'coffee'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m    |[39m                                         [31m[1m^[22m[39m
+     [90m 69 |[39m   })
+     [90m 70 |[39m })
+     [90m 71 |[39m[0m
+
+      at Object.toEqual (word-search.test.ts:68:41)
+
+  ● multi line grids › should locate a left to right word in a two line grid
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 3
+    + Received  + 3
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       2,
+    -       7,
+    +       1,
+    +       6,
+          ],
+          "start": Array [
+    -       2,
+            1,
+    +       0,
+          ],
+        },
+      }
+
+    [0m [90m 83 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 84 |[39m
+    [31m[1m>[22m[39m[90m 85 |[39m     expect(wordSearch[33m.[39mfind([[32m'clojure'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m    |[39m                                          [31m[1m^[22m[39m
+     [90m 86 |[39m   })
+     [90m 87 |[39m
+     [90m 88 |[39m   it([32m'should locate a left to right word in a different position in a two line grid'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:85:42)
+
+  ● multi line grids › should locate a left to right word in a different position in a two line grid
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       2,
+    -       8,
+    +       1,
+    +       7,
+          ],
+          "start": Array [
+    -       2,
+    -       2,
+    +       1,
+    +       1,
+          ],
+        },
+      }
+
+    [0m [90m  96 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m  97 |[39m
+    [31m[1m>[22m[39m[90m  98 |[39m     expect(wordSearch[33m.[39mfind([[32m'clojure'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m                                          [31m[1m^[22m[39m
+     [90m  99 |[39m   })
+     [90m 100 |[39m
+     [90m 101 |[39m   it([32m'should locate a left to right word in a three line grid'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:98:42)
+
+  ● multi line grids › should locate a left to right word in a three line grid
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       3,
+    -       7,
+    +       2,
+    +       6,
+          ],
+          "start": Array [
+    -       3,
+    -       1,
+    +       2,
+    +       0,
+          ],
+        },
+      }
+
+    [0m [90m 109 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 110 |[39m
+    [31m[1m>[22m[39m[90m 111 |[39m     expect(wordSearch[33m.[39mfind([[32m'clojure'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m                                          [31m[1m^[22m[39m
+     [90m 112 |[39m   })
+     [90m 113 |[39m
+     [90m 114 |[39m   it([32m'should locate a left to right word in a ten line grid'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:111:42)
+
+  ● multi line grids › should locate a left to right word in a ten line grid
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       10,
+    -       7,
+    +       9,
+    +       6,
+          ],
+          "start": Array [
+    -       10,
+    -       1,
+    +       9,
+    +       0,
+          ],
+        },
+      }
+
+    [0m [90m 134 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 135 |[39m
+    [31m[1m>[22m[39m[90m 136 |[39m     expect(wordSearch[33m.[39mfind([[32m'clojure'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m                                          [31m[1m^[22m[39m
+     [90m 137 |[39m   })
+     [90m 138 |[39m
+     [90m 139 |[39m   it([32m'should locate a left to right word in a different position in a ten line grid'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:136:42)
+
+  ● multi line grids › should locate a left to right word in a different position in a ten line grid
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       9,
+    -       7,
+    +       8,
+    +       6,
+          ],
+          "start": Array [
+    -       9,
+    -       1,
+    +       8,
+    +       0,
+          ],
+        },
+      }
+
+    [0m [90m 159 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 160 |[39m
+    [31m[1m>[22m[39m[90m 161 |[39m     expect(wordSearch[33m.[39mfind([[32m'clojure'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m                                          [31m[1m^[22m[39m
+     [90m 162 |[39m   })
+     [90m 163 |[39m
+     [90m 164 |[39m   it([32m'should locate a different left to right word in a ten line grid'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:161:42)
+
+  ● multi line grids › should locate a different left to right word in a ten line grid
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+        "scree": Object {
+          "end": Array [
+    -       7,
+    -       5,
+    +       6,
+    +       4,
+          ],
+          "start": Array [
+    -       7,
+    -       1,
+    +       6,
+    +       0,
+          ],
+        },
+      }
+
+    [0m [90m 183 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 184 |[39m
+    [31m[1m>[22m[39m[90m 185 |[39m     expect(wordSearch[33m.[39mfind([[32m'scree'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m                                        [31m[1m^[22m[39m
+     [90m 186 |[39m   })
+     [90m 187 |[39m })
+     [90m 188 |[39m[0m
+
+      at Object.toEqual (word-search.test.ts:185:40)
+
+  ● multiple words › should locate two words written left to right
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 8
+    + Received  + 8
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       10,
+    -       7,
+    +       9,
+    +       6,
+          ],
+          "start": Array [
+    -       10,
+    -       1,
+    +       9,
+    +       0,
+          ],
+        },
+        "java": Object {
+          "end": Array [
+    -       11,
+    -       5,
+    +       10,
+    +       4,
+          ],
+          "start": Array [
+    -       11,
+    -       2,
+    +       10,
+    +       1,
+          ],
+        },
+      }
+
+    [0m [90m 214 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 215 |[39m
+    [31m[1m>[22m[39m[90m 216 |[39m     expect(wordSearch[33m.[39mfind([[32m'java'[39m[33m,[39m [32m'clojure'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m                                                  [31m[1m^[22m[39m
+     [90m 217 |[39m   })
+     [90m 218 |[39m })
+     [90m 219 |[39m[0m
+
+      at Object.toEqual (word-search.test.ts:216:50)
+
+  ● different directions › should locate a single word written right to left
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+        "elixir": Object {
+          "end": Array [
+    -       1,
+    -       1,
+    +       0,
+    +       0,
+          ],
+          "start": Array [
+    -       1,
+    -       6,
+    +       0,
+    +       5,
+          ],
+        },
+      }
+
+    [0m [90m 229 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 230 |[39m
+    [31m[1m>[22m[39m[90m 231 |[39m     expect(wordSearch[33m.[39mfind([[32m'elixir'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m                                         [31m[1m^[22m[39m
+     [90m 232 |[39m   })
+     [90m 233 |[39m
+     [90m 234 |[39m   it([32m'should locate multiple words written in different horizontal directions'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:231:41)
+
+  ● different directions › should locate multiple words written in different horizontal directions
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 7
+    + Received  + 7
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       10,
+    -       7,
+    +       9,
+    +       6,
+          ],
+          "start": Array [
+    -       10,
+    -       1,
+    +       9,
+    +       0,
+          ],
+        },
+        "elixir": Object {
+          "end": Array [
+    -       5,
+    -       1,
+    +       4,
+    +       0,
+          ],
+          "start": Array [
+    +       4,
+            5,
+    -       6,
+          ],
+        },
+      }
+
+    [0m [90m 257 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+     [90m 258 |[39m
+    [31m[1m>[22m[39m[90m 259 |[39m     expect(wordSearch[33m.[39mfind([[32m'elixir'[39m[33m,[39m [32m'clojure'[39m]))[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m                                                    [31m[1m^[22m[39m
+     [90m 260 |[39m   })
+     [90m 261 |[39m })
+     [90m 262 |[39m[0m
+
+      at Object.toEqual (word-search.test.ts:259:52)
+
+  ● vertical directions › should locate words written top to bottom
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 11
+    + Received  + 11
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       10,
+    -       7,
+    +       9,
+    +       6,
+          ],
+          "start": Array [
+    -       10,
+    -       1,
+    +       9,
+    +       0,
+          ],
+        },
+        "ecmascript": Object {
+          "end": Array [
+    -       10,
+    -       10,
+    +       9,
+    +       9,
+          ],
+          "start": Array [
+    -       1,
+    -       10,
+    +       0,
+    +       9,
+          ],
+        },
+        "elixir": Object {
+          "end": Array [
+    -       5,
+    -       1,
+    +       4,
+    +       0,
+          ],
+          "start": Array [
+    +       4,
+            5,
+    -       6,
+          ],
+        },
+      }
+
+    [0m [90m 290 |[39m     }
+     [90m 291 |[39m     [36mconst[39m wordSearch [33m=[39m [36mnew[39m [33mWordSearch[39m(grid)
+    [31m[1m>[22m[39m[90m 292 |[39m     expect(wordSearch[33m.[39mfind([[32m'elixir'[39m[33m,[39m [32m'clojure'[39m[33m,[39m [32m'ecmascript'[39m]))[33m.[39mtoEqual(
+     [90m     |[39m                                                                  [31m[1m^[22m[39m
+     [90m 293 |[39m       expectedResults
+     [90m 294 |[39m     )
+     [90m 295 |[39m   })[0m
+
+      at Object.toEqual (word-search.test.ts:292:66)
+
+  ● vertical directions › should locate words written bottom to top
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 15
+    + Received  + 15
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       10,
+    -       7,
+    +       9,
+    +       6,
+          ],
+          "start": Array [
+    -       10,
+    -       1,
+    +       9,
+    +       0,
+          ],
+        },
+        "ecmascript": Object {
+          "end": Array [
+    -       10,
+    -       10,
+    +       9,
+    +       9,
+          ],
+          "start": Array [
+    -       1,
+    -       10,
+    +       0,
+    +       9,
+          ],
+        },
+        "elixir": Object {
+          "end": Array [
+    -       5,
+    -       1,
+    +       4,
+    +       0,
+          ],
+          "start": Array [
+    +       4,
+            5,
+    -       6,
+          ],
+        },
+        "rust": Object {
+          "end": Array [
+    -       2,
+    -       9,
+    +       1,
+    +       8,
+          ],
+          "start": Array [
+    -       5,
+    -       9,
+    +       4,
+    +       8,
+          ],
+        },
+      }
+
+    [0m [90m 330 |[39m     expect(
+     [90m 331 |[39m       wordSearch[33m.[39mfind([[32m'elixir'[39m[33m,[39m [32m'clojure'[39m[33m,[39m [32m'ecmascript'[39m[33m,[39m [32m'rust'[39m])
+    [31m[1m>[22m[39m[90m 332 |[39m     )[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m       [31m[1m^[22m[39m
+     [90m 333 |[39m   })
+     [90m 334 |[39m
+     [90m 335 |[39m   it([32m'should locate words written top left to bottom right'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:332:7)
+
+  ● vertical directions › should locate words written top left to bottom right
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 19
+    + Received  + 19
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       10,
+    -       7,
+    +       9,
+    +       6,
+          ],
+          "start": Array [
+    -       10,
+    -       1,
+    +       9,
+    +       0,
+          ],
+        },
+        "ecmascript": Object {
+          "end": Array [
+    -       10,
+    -       10,
+    +       9,
+    +       9,
+          ],
+          "start": Array [
+    -       1,
+    -       10,
+    +       0,
+    +       9,
+          ],
+        },
+        "elixir": Object {
+          "end": Array [
+    -       5,
+    -       1,
+    +       4,
+    +       0,
+          ],
+          "start": Array [
+    +       4,
+            5,
+    -       6,
+          ],
+        },
+        "java": Object {
+          "end": Array [
+    -       4,
+    -       4,
+    +       3,
+    +       3,
+          ],
+          "start": Array [
+    -       1,
+    -       1,
+    +       0,
+    +       0,
+          ],
+        },
+        "rust": Object {
+          "end": Array [
+    -       2,
+    -       9,
+    +       1,
+    +       8,
+          ],
+          "start": Array [
+    -       5,
+    -       9,
+    +       4,
+    +       8,
+          ],
+        },
+      }
+
+    [0m [90m 372 |[39m     expect(
+     [90m 373 |[39m       wordSearch[33m.[39mfind([[32m'clojure'[39m[33m,[39m [32m'elixir'[39m[33m,[39m [32m'ecmascript'[39m[33m,[39m [32m'rust'[39m[33m,[39m [32m'java'[39m])
+    [31m[1m>[22m[39m[90m 374 |[39m     )[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m       [31m[1m^[22m[39m
+     [90m 375 |[39m   })
+     [90m 376 |[39m
+     [90m 377 |[39m   it([32m'should locate words written bottom right to top left'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:374:7)
+
+  ● vertical directions › should locate words written bottom right to top left
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 21
+    + Received  + 21
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       10,
+    -       7,
+    +       9,
+    +       6,
+          ],
+          "start": Array [
+    -       10,
+    -       1,
+    +       9,
+    +       0,
+          ],
+        },
+        "ecmascript": Object {
+          "end": Array [
+    -       10,
+    -       10,
+    +       9,
+    +       9,
+          ],
+          "start": Array [
+    -       1,
+    -       10,
+    +       0,
+    +       9,
+          ],
+        },
+        "elixir": Object {
+          "end": Array [
+    -       5,
+    -       1,
+    +       4,
+    +       0,
+          ],
+          "start": Array [
+    +       4,
+            5,
+    -       6,
+          ],
+        },
+        "java": Object {
+          "end": Array [
+    -       4,
+    -       4,
+    +       3,
+    +       3,
+          ],
+          "start": Array [
+    -       1,
+    -       1,
+    +       0,
+    +       0,
+          ],
+        },
+        "lua": Object {
+          "end": Array [
+    -       7,
+            6,
+    +       5,
+          ],
+          "start": Array [
+    -       9,
+            8,
+    +       7,
+          ],
+        },
+        "rust": Object {
+          "end": Array [
+    -       2,
+    -       9,
+    +       1,
+    +       8,
+          ],
+          "start": Array [
+    -       5,
+    -       9,
+    +       4,
+    +       8,
+          ],
+        },
+      }
+
+    [0m [90m 426 |[39m         [32m'lua'[39m[33m,[39m
+     [90m 427 |[39m       ])
+    [31m[1m>[22m[39m[90m 428 |[39m     )[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m       [31m[1m^[22m[39m
+     [90m 429 |[39m   })
+     [90m 430 |[39m
+     [90m 431 |[39m   it([32m'should locate words written bottom left to top right'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:428:7)
+
+  ● vertical directions › should locate words written bottom left to top right
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 25
+    + Received  + 25
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       10,
+    -       7,
+    +       9,
+    +       6,
+          ],
+          "start": Array [
+    -       10,
+    -       1,
+    +       9,
+    +       0,
+          ],
+        },
+        "ecmascript": Object {
+          "end": Array [
+    -       10,
+    -       10,
+    +       9,
+    +       9,
+          ],
+          "start": Array [
+    -       1,
+    -       10,
+    +       0,
+    +       9,
+          ],
+        },
+        "elixir": Object {
+          "end": Array [
+    -       5,
+    -       1,
+    +       4,
+    +       0,
+          ],
+          "start": Array [
+    +       4,
+            5,
+    -       6,
+          ],
+        },
+        "java": Object {
+          "end": Array [
+    -       4,
+    -       4,
+    +       3,
+    +       3,
+          ],
+          "start": Array [
+    -       1,
+    -       1,
+    +       0,
+    +       0,
+          ],
+        },
+        "lisp": Object {
+          "end": Array [
+    -       3,
+    -       6,
+    +       2,
+    +       5,
+          ],
+          "start": Array [
+    -       6,
+    -       3,
+    +       5,
+    +       2,
+          ],
+        },
+        "lua": Object {
+          "end": Array [
+    -       7,
+            6,
+    +       5,
+          ],
+          "start": Array [
+    -       9,
+            8,
+    +       7,
+          ],
+        },
+        "rust": Object {
+          "end": Array [
+    -       2,
+    -       9,
+    +       1,
+    +       8,
+          ],
+          "start": Array [
+    -       5,
+    -       9,
+    +       4,
+    +       8,
+          ],
+        },
+      }
+
+    [0m [90m 485 |[39m         [32m'lisp'[39m[33m,[39m
+     [90m 486 |[39m       ])
+    [31m[1m>[22m[39m[90m 487 |[39m     )[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m       [31m[1m^[22m[39m
+     [90m 488 |[39m   })
+     [90m 489 |[39m
+     [90m 490 |[39m   it([32m'should locate words written top right to bottom left'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:487:7)
+
+  ● vertical directions › should locate words written top right to bottom left
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 29
+    + Received  + 29
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       10,
+    -       7,
+    +       9,
+    +       6,
+          ],
+          "start": Array [
+    -       10,
+    -       1,
+    +       9,
+    +       0,
+          ],
+        },
+        "ecmascript": Object {
+          "end": Array [
+    -       10,
+    -       10,
+    +       9,
+    +       9,
+          ],
+          "start": Array [
+    -       1,
+    -       10,
+    +       0,
+    +       9,
+          ],
+        },
+        "elixir": Object {
+          "end": Array [
+    -       5,
+    -       1,
+    +       4,
+    +       0,
+          ],
+          "start": Array [
+    +       4,
+            5,
+    -       6,
+          ],
+        },
+        "java": Object {
+          "end": Array [
+    -       4,
+    -       4,
+    +       3,
+    +       3,
+          ],
+          "start": Array [
+    -       1,
+    -       1,
+    +       0,
+    +       0,
+          ],
+        },
+        "lisp": Object {
+          "end": Array [
+    -       3,
+    -       6,
+    +       2,
+    +       5,
+          ],
+          "start": Array [
+    -       6,
+    -       3,
+    +       5,
+    +       2,
+          ],
+        },
+        "lua": Object {
+          "end": Array [
+    -       7,
+            6,
+    +       5,
+          ],
+          "start": Array [
+    -       9,
+            8,
+    +       7,
+          ],
+        },
+        "ruby": Object {
+          "end": Array [
+    -       9,
+    -       5,
+    +       8,
+    +       4,
+          ],
+          "start": Array [
+    -       6,
+    -       8,
+    +       5,
+    +       7,
+          ],
+        },
+        "rust": Object {
+          "end": Array [
+    -       2,
+    -       9,
+    +       1,
+    +       8,
+          ],
+          "start": Array [
+    -       5,
+    -       9,
+    +       4,
+    +       8,
+          ],
+        },
+      }
+
+    [0m [90m 549 |[39m         [32m'ruby'[39m[33m,[39m
+     [90m 550 |[39m       ])
+    [31m[1m>[22m[39m[90m 551 |[39m     )[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m       [31m[1m^[22m[39m
+     [90m 552 |[39m   })
+     [90m 553 |[39m })
+     [90m 554 |[39m[0m
+
+      at Object.toEqual (word-search.test.ts:551:7)
+
+  ● avoiding false-positives › should fail to locate a word that is not in the puzzle
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 29
+    + Received  + 29
+
+      Object {
+        "clojure": Object {
+          "end": Array [
+    -       10,
+    -       7,
+    +       9,
+    +       6,
+          ],
+          "start": Array [
+    -       10,
+    -       1,
+    +       9,
+    +       0,
+          ],
+        },
+        "ecmascript": Object {
+          "end": Array [
+    -       10,
+    -       10,
+    +       9,
+    +       9,
+          ],
+          "start": Array [
+    -       1,
+    -       10,
+    +       0,
+    +       9,
+          ],
+        },
+        "elixir": Object {
+          "end": Array [
+    -       5,
+    -       1,
+    +       4,
+    +       0,
+          ],
+          "start": Array [
+    +       4,
+            5,
+    -       6,
+          ],
+        },
+        "haskell": undefined,
+        "java": Object {
+          "end": Array [
+    -       4,
+    -       4,
+    +       3,
+    +       3,
+          ],
+          "start": Array [
+    -       1,
+    -       1,
+    +       0,
+    +       0,
+          ],
+        },
+        "lisp": Object {
+          "end": Array [
+    -       3,
+    -       6,
+    +       2,
+    +       5,
+          ],
+          "start": Array [
+    -       6,
+    -       3,
+    +       5,
+    +       2,
+          ],
+        },
+        "lua": Object {
+          "end": Array [
+    -       7,
+            6,
+    +       5,
+          ],
+          "start": Array [
+    -       9,
+            8,
+    +       7,
+          ],
+        },
+        "ruby": Object {
+          "end": Array [
+    -       9,
+    -       5,
+    +       8,
+    +       4,
+          ],
+          "start": Array [
+    -       6,
+    -       8,
+    +       5,
+    +       7,
+          ],
+        },
+        "rust": Object {
+          "end": Array [
+    -       2,
+    -       9,
+    +       1,
+    +       8,
+          ],
+          "start": Array [
+    -       5,
+    -       9,
+    +       4,
+    +       8,
+          ],
+        },
+      }
+
+    [0m [90m 617 |[39m         [32m'haskell'[39m[33m,[39m
+     [90m 618 |[39m       ])
+    [31m[1m>[22m[39m[90m 619 |[39m     )[33m.[39mtoEqual(expectedResults)
+     [90m     |[39m       [31m[1m^[22m[39m
+     [90m 620 |[39m   })
+     [90m 621 |[39m
+     [90m 622 |[39m   it([32m'should fail to locate words that are not on horizontal, vertical, or diagonal lines'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (word-search.test.ts:619:7)
+
+Test Suites: 1 failed, 1 total
+Tests:       20 failed, 6 passed, 26 total
+Snapshots:   0 total
+Time:        0.923 s
+Ran all test suites.
+
+jest summary (mutant): total=26 passed=6 failed=20 skipped=0

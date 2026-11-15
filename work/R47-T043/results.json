@@ -1,0 +1,31 @@
+{
+  "task": "R47-T043",
+  "exercise": "exercises/practice/word-search",
+  "reference_substituted": {
+    "word-search.ts": ".meta/proof.ci.ts"
+  },
+  "tool_versions": {
+    "node": "v24.22.1",
+    "yarn": "4.5.1",
+    "npm": "10.9.4",
+    "python": "3.12.3"
+  },
+  "runner_used": "npm install + tsc + jest (test-runner steps)",
+  "mutant": {
+    "change": "start/end .map((c) => c + 1) -> .map((c) => c) (0-based positions)",
+    "tests_total": 26,
+    "tests_passed": 6,
+    "tests_failed": 20,
+    "rejecting_test": "should locate a word written left to right",
+    "rejecting_test_found_in_output": true
+  },
+  "expected": "all enabled exercise cases pass against the reference",
+  "actual": {
+    "tests_total": 26,
+    "tests_passed": 26,
+    "tests_failed": 0,
+    "tests_skipped": 0
+  },
+  "failures": [],
+  "result": "PASS"
+}
