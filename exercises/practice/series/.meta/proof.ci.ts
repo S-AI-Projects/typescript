@@ -1,3 +1,10 @@
+// Cost, with n = the number of digits in the series and k = the slice
+// length passed to slices(): the constructor converts the string to
+// digits once, in Θ(n). slices(k) builds (n − k + 1) slices of length
+// k, copying Θ((n − k + 1) · k) digit values — exactly the size of the
+// output it returns. For a fixed k that is linear in n; when k grows
+// with n (worst case k ≈ n / 2) it is quadratic in n. Measured timings
+// that back this statement are recorded in docs/maintenance/series.md.
 export class Series {
   private readonly numberString: string
   private readonly digits: number[]

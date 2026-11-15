@@ -1,0 +1,106 @@
+tool versions: {'node': 'v24.22.1', 'yarn': '4.5.1', 'npm': '10.9.4', 'python': '3.12.3'}
+substituted .meta/proof.ci.ts -> series.ts
+enabled all cases in series.test.ts
+$ corepack yarn install (exit 1)
+➤ YN0000: · Yarn 4.5.1
+➤ YN0000: ┌ Resolution step
+➤ YN0001: │ Error: write EPROTO 40DD1DC77A7F0000:error:0A00010B:SSL routines:tls_validate_record_header:wrong version number:../deps/openssl/openssl/ssl/record/methods/tlsany_meth.c:77:
+
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:51:19)
+➤ YN0000: └ Completed
+➤ YN0000: · Failed with errors in 0s 122ms
+
+$ npm install (exit 0)
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 576 packages in 14s
+
+$ npx tsc --noEmit -p . (exit 0)
+
+$ npx jest --no-cache (exit 0)
+PASS ./series.test.ts
+  Series
+    ✓ slices of one from one (4 ms)
+    ✓ slices of one from two
+    ✓ slices of two
+    ✓ slices of two overlap (1 ms)
+    ✓ slices can include duplicates
+    ✓ slices of long series (1 ms)
+    ✓ slice length is too large (7 ms)
+    ✓ slice length is way too large (1 ms)
+    ✓ slice length cannot be zero
+    ✓ slice length cannot be negative
+    ✓ empty series is invalid (13 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       11 passed, 11 total
+Snapshots:   0 total
+Time:        0.739 s
+Ran all test suites.
+
+jest summary: total=11 passed=11 failed=0 skipped=0
+$ node work/R47-T045/benchmark.mjs (exit 0)
+{
+  "node": "v24.22.1",
+  "fixedSliceLength": [
+    {
+      "n": 1000,
+      "k": 5,
+      "slices": 996,
+      "elementsCopied": 4980,
+      "medianMs": 0.111,
+      "minMs": 0.054,
+      "reps": 7
+    },
+    {
+      "n": 10000,
+      "k": 5,
+      "slices": 9996,
+      "elementsCopied": 49980,
+      "medianMs": 1.36,
+      "minMs": 0.851,
+      "reps": 7
+    },
+    {
+      "n": 100000,
+      "k": 5,
+      "slices": 99996,
+      "elementsCopied": 499980,
+      "medianMs": 27.049,
+      "minMs": 5.511,
+      "reps": 7
+    }
+  ],
+  "halfLengthSlice": [
+    {
+      "n": 200,
+      "k": 100,
+      "slices": 101,
+      "elementsCopied": 10100,
+      "medianMs": 0.072,
+      "minMs": 0.07,
+      "reps": 7
+    },
+    {
+      "n": 2000,
+      "k": 1000,
+      "slices": 1001,
+      "elementsCopied": 1001000,
+      "medianMs": 7.321,
+      "minMs": 5.558,
+      "reps": 7
+    },
+    {
+      "n": 8000,
+      "k": 4000,
+      "slices": 4001,
+      "elementsCopied": 16004000,
+      "medianMs": 240.933,
+      "minMs": 133.876,
+      "reps": 7
+    }
+  ]
+}
+
