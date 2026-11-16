@@ -1,0 +1,34 @@
+$ corepack yarn test:implementation --ci --watchAll=false --json --outputFile=/var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmpr626miab/line-up/jest-results.json
+exit=0
+--- stdout ---
+
+--- stderr ---
+PASS ./line-up.test.ts
+  Line Up
+    ✓ format smallest non-exceptional ordinal numeral 4 (1 ms)
+    ✓ format greatest single digit non-exceptional ordinal numeral 9 (1 ms)
+    ✓ format non-exceptional ordinal numeral 5
+    ✓ format non-exceptional ordinal numeral 6
+    ✓ format non-exceptional ordinal numeral 7
+    ✓ format non-exceptional ordinal numeral 8
+    ✓ format exceptional ordinal numeral 1
+    ✓ format exceptional ordinal numeral 2
+    ✓ format exceptional ordinal numeral 3
+    ✓ format smallest two digit non-exceptional ordinal numeral 10
+    ✓ format non-exceptional ordinal numeral 11
+    ✓ format non-exceptional ordinal numeral 12
+    ✓ format non-exceptional ordinal numeral 13
+    ✓ format exceptional ordinal numeral 21
+    ✓ format exceptional ordinal numeral 62
+    ✓ format exceptional ordinal numeral 100
+    ✓ format exceptional ordinal numeral 101
+    ✓ format exceptional ordinal numeral 112
+    ✓ format exceptional ordinal numeral 123
+
+Test Suites: 1 passed, 1 total
+Tests:       19 passed, 19 total
+Snapshots:   0 total
+Time:        0.207 s
+Ran all test suites.
+Test results written to: ../../../../../../../../var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmpr626miab/line-up/jest-results.json
+
