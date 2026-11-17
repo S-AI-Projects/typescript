@@ -1,0 +1,24 @@
+tool versions: {'python': '3.14.5', 'node': 'v24.22.1', 'yarn': '4.5.1'}
+solution=line-up.ts test=line-up.test.ts example=.meta/proof.ci.ts
+PASS  tests.toml parses with 19 entries
+PASS  included/excluded unchanged: 19/0 -> 19/0
+PASS  rationale for 7760d1b8-4864-4db4-953b-0fa7c047dbc0 names the test
+PASS  include unchanged for 7760d1b8-4864-4db4-953b-0fa7c047dbc0
+PASS  rationale for e8b7c715-6baa-4f7b-8fb3-2fa48044ab7a names the test
+PASS  include unchanged for e8b7c715-6baa-4f7b-8fb3-2fa48044ab7a
+FAIL  rationale for f370aae9-7ae7-4247-90ce-e8ff8c6934df names the test
+PASS  include unchanged for f370aae9-7ae7-4247-90ce-e8ff8c6934df
+PASS  learner stub still unsolved
+PASS  line-up.ts unchanged in working tree
+PASS  line-up.test.ts unchanged in working tree
+PASS  19 cases enabled in temp copy (expected 19)
+PASS  yarn install in temp copy (exit 0)
+PASS  jest child exit code is 0 (got 0)
+executed=19 passed=19 failed=0 pending=0
+PASS  test run executed more than zero tests
+PASS  all 19 cases passed against the reference
+PASS  named case passes: format smallest non-exceptional ordinal numeral 4
+PASS  named case passes: format greatest single digit non-exceptional ordinal numeral 9
+PASS  named case passes: format non-exceptional ordinal numeral 5
+
+RESULT: FAILED
