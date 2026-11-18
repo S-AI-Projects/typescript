@@ -1,0 +1,15 @@
+{
+  "exercise": "exercises/practice/circular-buffer",
+  "config": {
+    "solution": "circular-buffer.ts",
+    "test": "circular-buffer.test.ts",
+    "example": ".meta/proof.ci.ts"
+  },
+  "required_cases": [
+    "reading an empty buffer throws a BufferEmptyError",
+    "write and read back one item",
+    "write and read back multiple items"
+  ],
+  "expected_total_tests": 10,
+  "package_test_script": "corepack yarn node test-runner.mjs"
+}
