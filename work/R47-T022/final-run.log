@@ -31,3 +31,4 @@ PASS  working-tree test file not modified by this checker
 
 RESULT: ALL CHECKS PASSED
 exit code: 0
+

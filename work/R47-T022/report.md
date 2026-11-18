@@ -158,3 +158,4 @@ The learner stub is **unsolved and unmodified**.
 
 Both `circular-buffer.ts` and `circular-buffer.test.ts` show no diff against
 `HEAD` in the working tree. The checker did not modify any repository file.
+
