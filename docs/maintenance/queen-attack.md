@@ -85,3 +85,4 @@ When analyzing runtime execution in this test suite, it is essential to distingu
 
 - **Domain Limitation:** This analysis and its bounds apply exclusively to the fixed $8 \times 8$ board specification defined by Exercism's canonical problem specification.
 - **No Speedup Claim:** No optimization or algorithmic speedup is claimed because the existing implementation is already optimal ($\mathcal{O}(1)$ bound, at most 8 comparisons) and nothing is being compared against an alternative algorithm.
+
