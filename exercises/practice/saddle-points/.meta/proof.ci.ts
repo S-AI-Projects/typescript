@@ -1,30 +1,27 @@
 export function saddlePoints(
   matrix: number[][]
 ): Array<{ row: number; column: number }> {
-  const maximumRowValues: number[] = []
-  const minimumColumnValues: number[] = []
-
-  for (let i = 0; i <= matrix.length - 1; i++) {
-    let maximumRowValue = Number.MIN_VALUE
-    for (let j = 0; j < matrix[0].length; j++) {
-      maximumRowValue = Math.max(maximumRowValue, matrix[i][j])
-    }
-    maximumRowValues.push(maximumRowValue)
+  // A saddle point is an entry that is greater than or equal to every element in its row
+  // (row maximum) and less than or equal to every element in its column (column minimum).
+  // Coordinates in the returned result are 1-based: { row: 1..M, column: 1..N }.
+  if (matrix.length === 0 || matrix[0].length === 0) {
+    return []
   }
 
-  for (let i = 0; i <= matrix[0].length - 1; i++) {
-    let minimumColumnValue = Number.MAX_VALUE
-    for (let j = 0; j <= matrix.length - 1; j++) {
-      minimumColumnValue = Math.min(minimumColumnValue, matrix[j][i])
-    }
-    minimumColumnValues.push(minimumColumnValue)
-  }
+  const maximumRowValues: number[] = matrix.map((row) => Math.max(...row))
+  const numColumns = matrix[0].length
+
+  const minimumColumnValues: number[] = Array.from(
+    { length: numColumns },
+    (_, colIndex) => Math.min(...matrix.map((row) => row[colIndex]))
+  )
 
   const resultPoints: Array<{ row: number; column: number }> = []
-  for (let i = 0; i < maximumRowValues.length; i++) {
-    for (let j = 0; j < minimumColumnValues.length; j++) {
-      if (maximumRowValues[i] === minimumColumnValues[j]) {
-        resultPoints.push({ row: i + 1, column: j + 1 })
+
+  for (let rowIndex = 0; rowIndex < maximumRowValues.length; rowIndex++) {
+    for (let colIndex = 0; colIndex < minimumColumnValues.length; colIndex++) {
+      if (maximumRowValues[rowIndex] === minimumColumnValues[colIndex]) {
+        resultPoints.push({ row: rowIndex + 1, column: colIndex + 1 })
       }
     }
   }

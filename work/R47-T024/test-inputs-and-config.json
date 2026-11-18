@@ -1,0 +1,15 @@
+{
+  "exercise": "exercises/practice/saddle-points",
+  "config": {
+    "solution": "saddle-points.ts",
+    "test": "saddle-points.test.ts",
+    "example": ".meta/proof.ci.ts"
+  },
+  "named_cases": [
+    "Can identify single saddle point",
+    "Can identify that empty matrix has no saddle points",
+    "Can identify lack of saddle points when there are none"
+  ],
+  "expected_total_tests": 9,
+  "package_test_script": "corepack yarn node test-runner.mjs"
+}

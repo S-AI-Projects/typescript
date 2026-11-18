@@ -1,0 +1,58 @@
+{
+  "summary": "Original and refactored implementations pass identical test cases",
+  "total_executed": 9,
+  "passed": 9,
+  "failed": 0,
+  "named_cases_verification": [
+    {
+      "case": "Can identify single saddle point",
+      "status": "passed"
+    },
+    {
+      "case": "Can identify that empty matrix has no saddle points",
+      "status": "passed"
+    },
+    {
+      "case": "Can identify lack of saddle points when there are none",
+      "status": "passed"
+    }
+  ],
+  "all_cases": [
+    {
+      "title": "Can identify single saddle point",
+      "status": "passed"
+    },
+    {
+      "title": "Can identify that empty matrix has no saddle points",
+      "status": "passed"
+    },
+    {
+      "title": "Can identify lack of saddle points when there are none",
+      "status": "passed"
+    },
+    {
+      "title": "Can identify multiple saddle points in a column",
+      "status": "passed"
+    },
+    {
+      "title": "Can identify multiple saddle points in a row",
+      "status": "passed"
+    },
+    {
+      "title": "Can identify saddle point in bottom right corner",
+      "status": "passed"
+    },
+    {
+      "title": "Can identify saddle points in a non square matrix",
+      "status": "passed"
+    },
+    {
+      "title": "Can identify that saddle points in a single column matrix are those with the minimum value",
+      "status": "passed"
+    },
+    {
+      "title": "Can identify that saddle points in a single row matrix are those with the maximum value",
+      "status": "passed"
+    }
+  ]
+}
