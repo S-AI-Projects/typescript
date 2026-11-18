@@ -1,0 +1,27 @@
+$ corepack yarn test
+exit=0
+--- stdout ---
+[tests] tsc: ✅, tstyche: ❌, jest: ✅, 
+[tests] tsc (compile)
+[tests] tstyche (implementation tests)
+
+--- stderr ---
+PASS ./circular-buffer.test.ts
+  CircularBuffer
+    ✓ reading an empty buffer throws a BufferEmptyError (3 ms)
+    ✓ write and read back one item (1 ms)
+    ✓ write and read back multiple items
+    ✓ clearing a buffer
+    ✓ alternate write and read
+    ✓ reads back oldest item (1 ms)
+    ✓ writing to a full buffer throws a BufferFullError
+    ✓ forced writes over write oldest item in a full buffer
+    ✓ forced writes act like write in a non-full buffer
+    ✓ alternate force write and read into full buffer
+
+Test Suites: 1 passed, 1 total
+Tests:       10 passed, 10 total
+Snapshots:   0 total
+Time:        0.232 s
+Ran all test suites.
+

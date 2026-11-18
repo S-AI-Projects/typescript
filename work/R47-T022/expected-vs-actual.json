@@ -1,0 +1,17 @@
+[
+  {
+    "test": "reading an empty buffer throws a BufferEmptyError",
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "test": "write and read back one item",
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "test": "write and read back multiple items",
+    "expected": "passed",
+    "actual": "passed"
+  }
+]

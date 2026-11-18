@@ -1,0 +1,33 @@
+$ python3 work/R47-T022/check.py
+Tool versions: {'python': '3.14.5', 'node': 'v24.22.1', 'yarn': '4.5.1'}
+solution=circular-buffer.ts  test=circular-buffer.test.ts  example=.meta/proof.ci.ts
+tests.toml: total=14  included=14  excluded=0
+PASS  tests.toml has 14 canonical entries (got 14)
+Test file: total=10  active=1  skipped=9
+PASS  test file has 10 tests (got 10)
+PASS  required case present: 'reading an empty buffer throws a BufferEmptyError'
+PASS  required case present: 'write and read back one item'
+PASS  required case present: 'write and read back multiple items'
+PASS  learner stub still unsolved
+PASS  circular-buffer.ts unchanged in working tree
+PASS  circular-buffer.test.ts unchanged in working tree
+
+Package test script: corepack yarn node test-runner.mjs
+PASS  10 cases enabled in temp copy (expected 10)
+PASS  yarn install succeeded (exit 0)
+PASS  package.json 'test' script exit code 0 (got 0)
+PASS  jest exit code 0 (got 0)
+
+jest results: executed=10 passed=10 failed=0 pending=0
+PASS  test run executed more than zero tests
+PASS  all 10 cases executed (got 10)
+PASS  all 10 cases passed (got 10)
+PASS  no assertion failures (failed=0)
+PASS  no pending tests (pending=0)
+PASS  required case passed: 'reading an empty buffer throws a BufferEmptyError'
+PASS  required case passed: 'write and read back one item'
+PASS  required case passed: 'write and read back multiple items'
+PASS  working-tree test file not modified by this checker
+
+RESULT: ALL CHECKS PASSED
+exit code: 0

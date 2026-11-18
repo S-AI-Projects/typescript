@@ -1,0 +1,25 @@
+$ corepack yarn test:implementation --ci --watchAll=false --json --outputFile=/var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmpw0ic9f7p/circular-buffer/jest-results.json
+exit=0
+--- stdout ---
+
+--- stderr ---
+PASS ./circular-buffer.test.ts
+  CircularBuffer
+    ✓ reading an empty buffer throws a BufferEmptyError (3 ms)
+    ✓ write and read back one item
+    ✓ write and read back multiple items (1 ms)
+    ✓ clearing a buffer
+    ✓ alternate write and read
+    ✓ reads back oldest item
+    ✓ writing to a full buffer throws a BufferFullError
+    ✓ forced writes over write oldest item in a full buffer (1 ms)
+    ✓ forced writes act like write in a non-full buffer
+    ✓ alternate force write and read into full buffer
+
+Test Suites: 1 passed, 1 total
+Tests:       10 passed, 10 total
+Snapshots:   0 total
+Time:        0.237 s
+Ran all test suites.
+Test results written to: ../../../../../../../../var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmpw0ic9f7p/circular-buffer/jest-results.json
+
