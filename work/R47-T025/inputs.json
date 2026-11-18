@@ -1,0 +1,18 @@
+{
+  "exercise": "exercises/practice/queen-attack",
+  "config": {
+    "solution": "queen-attack.ts",
+    "test": "queen-attack.test.ts",
+    "example": ".meta/proof.ci.ts"
+  },
+  "named_cases": [
+    "queen with a valid position",
+    "queen must have positive row",
+    "queen must have row on board"
+  ],
+  "board_dimensions": {
+    "width": 8,
+    "height": 8
+  },
+  "package_test_script": "corepack yarn node test-runner.mjs"
+}

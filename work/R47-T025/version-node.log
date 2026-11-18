@@ -1,0 +1,7 @@
+$ node -v
+exit=0
+--- stdout ---
+v24.22.1
+
+--- stderr ---
+
