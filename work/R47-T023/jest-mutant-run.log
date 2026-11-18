@@ -1,0 +1,171 @@
+$ corepack yarn test:implementation --ci --watchAll=false --json --outputFile=/var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmpih6x59__/etl/jest-mutant-results.json
+exit=1
+--- stdout ---
+
+--- stderr ---
+FAIL ./etl.test.ts
+  Transform
+    ✕ transforms one value (2 ms)
+    ✕ transforms more values
+    ✕ transforms more keys (1 ms)
+    ✕ transforms a full dataset
+
+  ● Transform › transforms one value
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+    -   "a": 1,
+    +   "A": 1,
+      }
+
+    [0m [90m  7 |[39m     [36mconst[39m expected[33m:[39m { [key[33m:[39m string][33m:[39m number } [33m=[39m { a[33m:[39m [35m1[39m }
+     [90m  8 |[39m
+    [31m[1m>[22m[39m[90m  9 |[39m     expect(transform(old))[33m.[39mtoEqual(expected)
+     [90m    |[39m                            [31m[1m^[22m[39m
+     [90m 10 |[39m   })
+     [90m 11 |[39m
+     [90m 12 |[39m   it([32m'transforms more values'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (etl.test.ts:9:28)
+
+  ● Transform › transforms more values
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 5
+    + Received  + 5
+
+      Object {
+    -   "a": 1,
+    -   "e": 1,
+    -   "i": 1,
+    -   "o": 1,
+    -   "u": 1,
+    +   "A": 1,
+    +   "E": 1,
+    +   "I": 1,
+    +   "O": 1,
+    +   "U": 1,
+      }
+
+    [0m [90m 14 |[39m     [36mconst[39m expected [33m=[39m { a[33m:[39m [35m1[39m[33m,[39m e[33m:[39m [35m1[39m[33m,[39m i[33m:[39m [35m1[39m[33m,[39m o[33m:[39m [35m1[39m[33m,[39m u[33m:[39m [35m1[39m }
+     [90m 15 |[39m
+    [31m[1m>[22m[39m[90m 16 |[39m     expect(transform(old))[33m.[39mtoEqual(expected)
+     [90m    |[39m                            [31m[1m^[22m[39m
+     [90m 17 |[39m   })
+     [90m 18 |[39m
+     [90m 19 |[39m   it([32m'transforms more keys'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (etl.test.ts:16:28)
+
+  ● Transform › transforms more keys
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+    -   "a": 1,
+    -   "d": 2,
+    -   "e": 1,
+    -   "g": 2,
+    +   "A": 1,
+    +   "D": 2,
+    +   "E": 1,
+    +   "G": 2,
+      }
+
+    [0m [90m 21 |[39m     [36mconst[39m expected [33m=[39m { a[33m:[39m [35m1[39m[33m,[39m e[33m:[39m [35m1[39m[33m,[39m d[33m:[39m [35m2[39m[33m,[39m g[33m:[39m [35m2[39m }
+     [90m 22 |[39m
+    [31m[1m>[22m[39m[90m 23 |[39m     expect(transform(old))[33m.[39mtoEqual(expected)
+     [90m    |[39m                            [31m[1m^[22m[39m
+     [90m 24 |[39m   })
+     [90m 25 |[39m
+     [90m 26 |[39m   it([32m'transforms a full dataset'[39m[33m,[39m () [33m=>[39m {[0m
+
+      at Object.toEqual (etl.test.ts:23:28)
+
+  ● Transform › transforms a full dataset
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 26
+    + Received  + 26
+
+      Object {
+    -   "a": 1,
+    -   "b": 3,
+    -   "c": 3,
+    -   "d": 2,
+    -   "e": 1,
+    -   "f": 4,
+    -   "g": 2,
+    -   "h": 4,
+    -   "i": 1,
+    -   "j": 8,
+    -   "k": 5,
+    -   "l": 1,
+    -   "m": 3,
+    -   "n": 1,
+    -   "o": 1,
+    -   "p": 3,
+    -   "q": 10,
+    -   "r": 1,
+    -   "s": 1,
+    -   "t": 1,
+    -   "u": 1,
+    -   "v": 4,
+    -   "w": 4,
+    -   "x": 8,
+    -   "y": 4,
+    -   "z": 10,
+    +   "A": 1,
+    +   "B": 3,
+    +   "C": 3,
+    +   "D": 2,
+    +   "E": 1,
+    +   "F": 4,
+    +   "G": 2,
+    +   "H": 4,
+    +   "I": 1,
+    +   "J": 8,
+    +   "K": 5,
+    +   "L": 1,
+    +   "M": 3,
+    +   "N": 1,
+    +   "O": 1,
+    +   "P": 3,
+    +   "Q": 10,
+    +   "R": 1,
+    +   "S": 1,
+    +   "T": 1,
+    +   "U": 1,
+    +   "V": 4,
+    +   "W": 4,
+    +   "X": 8,
+    +   "Y": 4,
+    +   "Z": 10,
+      }
+
+    [0m [90m 63 |[39m     }
+     [90m 64 |[39m
+    [31m[1m>[22m[39m[90m 65 |[39m     expect(transform(old))[33m.[39mtoEqual(expected)
+     [90m    |[39m                            [31m[1m^[22m[39m
+     [90m 66 |[39m   })
+     [90m 67 |[39m })
+     [90m 68 |[39m[0m
+
+      at Object.toEqual (etl.test.ts:65:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 4 total
+Snapshots:   0 total
+Time:        0.217 s
+Ran all test suites.
+Test results written to: ../../../../../../../../var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmpih6x59__/etl/jest-mutant-results.json
+

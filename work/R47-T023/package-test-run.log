@@ -1,0 +1,21 @@
+$ corepack yarn test
+exit=0
+--- stdout ---
+[tests] tsc: ✅, tstyche: ❌, jest: ✅, 
+[tests] tsc (compile)
+[tests] tstyche (implementation tests)
+
+--- stderr ---
+PASS ./etl.test.ts
+  Transform
+    ✓ transforms one value (1 ms)
+    ✓ transforms more values (1 ms)
+    ✓ transforms more keys
+    ✓ transforms a full dataset
+
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        0.241 s
+Ran all test suites.
+
