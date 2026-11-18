@@ -10,6 +10,11 @@ type Positions = {
   black: Position
 }
 
+// Complexity / Invariant:
+// Valid board coordinates satisfy 0 <= row < H (8) and 0 <= col < W (8).
+// In this fixed 8x8 domain, invalidPosition executes at most 8 comparisons
+// (4 for white, 4 for black) under short-circuit evaluation.
+// The operation count is strictly bounded by a constant, guaranteeing O(1) time and O(1) space.
 function invalidPosition({ white, black }: Positions): boolean {
   if (white[0] < 0 || white[0] >= H || white[1] < 0 || white[1] >= W) {
     return true

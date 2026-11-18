@@ -1,0 +1,38 @@
+$ corepack yarn test:implementation --ci --watchAll=false --json --outputFile=/var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmp_wgmek28/queen-attack/jest-results.json
+exit=0
+--- stdout ---
+
+--- stderr ---
+PASS ./queen-attack.test.ts
+  Queens
+    Test creation of Queens with valid and invalid positions
+      ✓ queen with a valid position (1 ms)
+      ✓ queen must have positive row (3 ms)
+      ✓ queen must have row on board
+      ✓ queen must have positive column
+      ✓ queen must have column on board
+      ✓ two queens cannot occupy the same space
+    Test the ability of one queen to attack another
+      ✓ queens cannot attack
+      ✓ queens can attack when they are on the same row
+      ✓ queens can attack when they are on the same column
+      ✓ queens can attack diagonally
+      ✓ queens can attack another diagonally
+      ✓ queens can attack yet another diagonally
+      ✓ queens can attack diagonally, really
+      ✓ queens can attack on a north-east/south-west diagonal (1 ms)
+      ✓ queens can attack on another ne/sw diagonal
+      ✓ queens cannot attack if falling diagonals are only the same when reflected across the longest falling diagonal
+    Test the board visualisation
+      ✓ board
+      ✓ board with queens at their starting positions
+      ✓ board with the black queen at her starting positions
+      ✓ board with queens at the edges
+
+Test Suites: 1 passed, 1 total
+Tests:       20 passed, 20 total
+Snapshots:   0 total
+Time:        0.228 s
+Ran all test suites.
+Test results written to: ../../../../../../../../var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmp_wgmek28/queen-attack/jest-results.json
+

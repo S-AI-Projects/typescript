@@ -1,0 +1,45 @@
+Tool versions: {'python': '3.14.5', 'node': 'v24.22.1', 'yarn': '4.5.1'}
+solution=queen-attack.ts test=queen-attack.test.ts example=.meta/proof.ci.ts
+PASS  tests.toml parsed successfully with 13 canonical entries
+PASS  learner stub is unsolved in working tree
+PASS  queen-attack.ts unchanged in working tree
+PASS  queen-attack.test.ts unchanged in working tree
+
+--- Running Reference Implementation in Temporary Copy ---
+PASS  Found 20 test cases enabled in temporary copy
+PASS  yarn install succeeded (exit 0)
+PASS  package.json test script exit code is 0 (got 0)
+PASS  jest exit code is 0 (got 0)
+Test run results: total=20 passed=20 failed=0
+PASS  Executed test count is greater than 0 (got 20)
+PASS  All 20 enabled test cases passed against reference (got 20 passed)
+PASS  No failed assertions (got 0 failures)
+PASS  Named test case 'queen with a valid position' passed (got passed)
+PASS  Named test case 'queen must have positive row' passed (got passed)
+PASS  Named test case 'queen must have row on board' passed (got passed)
+
+--- Verifying Operation Counts & Complexity Bounds ---
+PASS  Branch 'White: row < 0': comparison count matches table (1 == 1)
+PASS  Branch 'White: row < 0': validity matches expected (True == True)
+PASS  Branch 'White: row >= 8': comparison count matches table (2 == 2)
+PASS  Branch 'White: row >= 8': validity matches expected (True == True)
+PASS  Branch 'White: col < 0': comparison count matches table (3 == 3)
+PASS  Branch 'White: col < 0': validity matches expected (True == True)
+PASS  Branch 'White: col >= 8': comparison count matches table (4 == 4)
+PASS  Branch 'White: col >= 8': validity matches expected (True == True)
+PASS  Branch 'Black: row < 0': comparison count matches table (5 == 5)
+PASS  Branch 'Black: row < 0': validity matches expected (True == True)
+PASS  Branch 'Black: row >= 8': comparison count matches table (6 == 6)
+PASS  Branch 'Black: row >= 8': validity matches expected (True == True)
+PASS  Branch 'Black: col < 0': comparison count matches table (7 == 7)
+PASS  Branch 'Black: col < 0': validity matches expected (True == True)
+PASS  Branch 'Black: col >= 8': comparison count matches table (8 == 8)
+PASS  Branch 'Black: col >= 8': validity matches expected (True == True)
+PASS  Branch 'Both valid': comparison count matches table (8 == 8)
+PASS  Branch 'Both valid': validity matches expected (False == False)
+PASS  Documentation file exists: /Users/surya/typescript/docs/maintenance/queen-attack.md
+PASS  Documentation records O(1) bound
+PASS  Documentation records comparison bound
+PASS  working tree test file was not modified
+
+RESULT: ALL CHECKS PASSED

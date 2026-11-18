@@ -1,0 +1,40 @@
+$ corepack yarn test
+exit=0
+--- stdout ---
+[tests] tsc: ✅, tstyche: ❌, jest: ✅, 
+[tests] tsc (compile)
+[tests] tstyche (implementation tests)
+
+--- stderr ---
+PASS ./queen-attack.test.ts
+  Queens
+    Test creation of Queens with valid and invalid positions
+      ✓ queen with a valid position (1 ms)
+      ✓ queen must have positive row (3 ms)
+      ✓ queen must have row on board
+      ✓ queen must have positive column
+      ✓ queen must have column on board (1 ms)
+      ✓ two queens cannot occupy the same space
+    Test the ability of one queen to attack another
+      ✓ queens cannot attack
+      ✓ queens can attack when they are on the same row
+      ✓ queens can attack when they are on the same column
+      ✓ queens can attack diagonally
+      ✓ queens can attack another diagonally
+      ✓ queens can attack yet another diagonally
+      ✓ queens can attack diagonally, really
+      ✓ queens can attack on a north-east/south-west diagonal
+      ✓ queens can attack on another ne/sw diagonal (1 ms)
+      ✓ queens cannot attack if falling diagonals are only the same when reflected across the longest falling diagonal
+    Test the board visualisation
+      ✓ board
+      ✓ board with queens at their starting positions
+      ✓ board with the black queen at her starting positions
+      ✓ board with queens at the edges
+
+Test Suites: 1 passed, 1 total
+Tests:       20 passed, 20 total
+Snapshots:   0 total
+Time:        0.226 s
+Ran all test suites.
+
