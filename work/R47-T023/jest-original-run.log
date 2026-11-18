@@ -1,0 +1,19 @@
+$ corepack yarn test:implementation --ci --watchAll=false --json --outputFile=/var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmpy86p83du/etl/jest-results.json
+exit=0
+--- stdout ---
+
+--- stderr ---
+PASS ./etl.test.ts
+  Transform
+    ✓ transforms one value
+    ✓ transforms more values
+    ✓ transforms more keys
+    ✓ transforms a full dataset
+
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        0.201 s
+Ran all test suites.
+Test results written to: ../../../../../../../../var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmpy86p83du/etl/jest-results.json
+
