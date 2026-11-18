@@ -1,0 +1,26 @@
+$ corepack yarn test
+exit=0
+--- stdout ---
+[tests] tsc: ✅, tstyche: ❌, jest: ✅, 
+[tests] tsc (compile)
+[tests] tstyche (implementation tests)
+
+--- stderr ---
+PASS ./saddle-points.test.ts
+  Saddle Points
+    ✓ Can identify single saddle point (1 ms)
+    ✓ Can identify that empty matrix has no saddle points
+    ✓ Can identify lack of saddle points when there are none (1 ms)
+    ✓ Can identify multiple saddle points in a column
+    ✓ Can identify multiple saddle points in a row
+    ✓ Can identify saddle point in bottom right corner
+    ✓ Can identify saddle points in a non square matrix
+    ✓ Can identify that saddle points in a single column matrix are those with the minimum value
+    ✓ Can identify that saddle points in a single row matrix are those with the maximum value
+
+Test Suites: 1 passed, 1 total
+Tests:       9 passed, 9 total
+Snapshots:   0 total
+Time:        0.217 s
+Ran all test suites.
+
