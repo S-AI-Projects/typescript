@@ -1,0 +1,26 @@
+{
+  "scenario_a_success": {
+    "expected_exit_code": 0,
+    "expected_total_tests": 5,
+    "expected_executed_tests": 5,
+    "expected_passed_tests": 5,
+    "expected_failed_tests": 0,
+    "expected_named_cases": {
+      "empty strand": "passed",
+      "can count one nucleotide in single-character input": "passed",
+      "strand with repeated nucleotide": "passed"
+    }
+  },
+  "scenario_b_failing_reference": {
+    "expected_exit_code": 1,
+    "expected_error_snippet": "5 failed, 0 passed"
+  },
+  "scenario_c_empty_test_selection": {
+    "expected_exit_code": 1,
+    "expected_error_snippet": "Zero tests were executed"
+  },
+  "hash_integrity": {
+    "hashes_match": true,
+    "learner_stub_unsolved": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "scenario_a_success": {
+    "exit_code": 0,
+    "total": 5,
+    "passed": 5,
+    "failed": 0,
+    "assertions": {
+      "empty strand": "passed",
+      "can count one nucleotide in single-character input": "passed",
+      "strand with repeated nucleotide": "passed",
+      "strand with multiple nucleotides": "passed",
+      "strand with invalid nucleotides": "passed"
+    }
+  },
+  "scenario_b_failing_reference": {
+    "exit_code": 1,
+    "error": "Test suite execution failed (exit code 1): 5 failed, 0 passed."
+  },
+  "scenario_c_empty_test_selection": {
+    "exit_code": 1,
+    "error": "Zero tests were executed (total=5, pending=5, passed=0, failed=0). Test selection yielded no executed tests."
+  }
+}

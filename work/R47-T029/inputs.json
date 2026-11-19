@@ -1,0 +1,31 @@
+{
+  "exercise_dir": "exercises/practice/nucleotide-count",
+  "config_path": "exercises/practice/nucleotide-count/.meta/config.json",
+  "scenarios": {
+    "scenario_a_success": {
+      "description": "Successful reference execution with real proof.ci.ts",
+      "reference_override": null,
+      "test_pattern": null
+    },
+    "scenario_b_failing_reference": {
+      "description": "Deliberately failing reference returning incorrect counts (-1)",
+      "failing_code": "export function nucleotideCounts(strand: string) { return { A: -1, C: -1, G: -1, T: -1 }; }\n",
+      "test_pattern": null
+    },
+    "scenario_c_empty_test_selection": {
+      "description": "Simulated empty test selection matching 0 tests",
+      "reference_override": null,
+      "test_pattern": "NONEXISTENT_TEST_NAME_XYZ"
+    }
+  },
+  "named_test_cases": [
+    "empty strand",
+    "can count one nucleotide in single-character input",
+    "strand with repeated nucleotide"
+  ],
+  "integrity_files": [
+    "exercises/practice/nucleotide-count/nucleotide-count.ts",
+    "exercises/practice/nucleotide-count/nucleotide-count.test.ts",
+    "exercises/practice/nucleotide-count/.meta/proof.ci.ts"
+  ]
+}

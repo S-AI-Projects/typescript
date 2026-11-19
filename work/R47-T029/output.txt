@@ -1,0 +1,33 @@
+=== Nucleotide Count R47-T029 Automated Verification Checker ===
+Tool versions: {'Python': '3.14.5', 'Node': 'v24.22.1', 'Yarn': '4.5.1', 'Corepack': '0.36.0'}
+Resolved paths from config.json: solution=nucleotide-count.ts, test=nucleotide-count.test.ts, example=.meta/proof.ci.ts
+Canonical test cases defined in tests.toml: 5
+PASS  canonical test count > 0 in tests.toml
+Initial SHA-256 hashes calculated:
+  exercises/practice/nucleotide-count/nucleotide-count.ts: 774c2697bd0e0f7a133525521500da3e1ecc165542fd223e66b1e8649b32f382
+  exercises/practice/nucleotide-count/nucleotide-count.test.ts: 6b19a46d7d7b4767b4b19d0f5936e1a6e820dbefccd961f6f2f9361d4cc2ff97
+  exercises/practice/nucleotide-count/.meta/proof.ci.ts: dcef80826c7d94c570885e884742d62f2fd51d612218449db22ce85048929fcb
+PASS  learner stub is unsolved in working tree
+
+--- Scenario A: Successful Reference Execution ---
+PASS  Scenario A runner exit code is 0 (got 0)
+PASS  Scenario A success is True
+PASS  Scenario A executed all canonical cases (5/5)
+PASS  Scenario A all tests passed (5/5)
+PASS  Scenario A zero test failures (got 0)
+PASS  Scenario A named case 'empty strand' passed (status: passed)
+PASS  Scenario A named case 'can count one nucleotide in single-character input' passed (status: passed)
+PASS  Scenario A named case 'strand with repeated nucleotide' passed (status: passed)
+PASS  Hashes match initial hashes after Scenario A
+
+--- Scenario B: Deliberately Failing Reference ---
+PASS  Scenario B runner correctly failed with non-zero code (got 1)
+PASS  Scenario B reports test failure: Test suite execution failed (exit code 1): 5 failed, 0 passed.
+PASS  Hashes match initial hashes after Scenario B
+
+--- Scenario C: Empty Test Selection ---
+PASS  Scenario C runner correctly failed with non-zero code (got 1)
+PASS  Scenario C correctly detected zero-test condition: Zero tests were executed (total=5, pending=5, passed=0, failed=0). Test selection yielded no executed tests.
+PASS  Hashes match initial hashes after Scenario C
+
+--- Generating Evidence Files ---

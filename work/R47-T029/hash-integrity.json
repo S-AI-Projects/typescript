@@ -1,0 +1,26 @@
+{
+  "initial_hashes": {
+    "exercises/practice/nucleotide-count/nucleotide-count.ts": "774c2697bd0e0f7a133525521500da3e1ecc165542fd223e66b1e8649b32f382",
+    "exercises/practice/nucleotide-count/nucleotide-count.test.ts": "6b19a46d7d7b4767b4b19d0f5936e1a6e820dbefccd961f6f2f9361d4cc2ff97",
+    "exercises/practice/nucleotide-count/.meta/proof.ci.ts": "dcef80826c7d94c570885e884742d62f2fd51d612218449db22ce85048929fcb"
+  },
+  "scenario_hashes": {
+    "after_scenario_a": {
+      "exercises/practice/nucleotide-count/nucleotide-count.ts": "774c2697bd0e0f7a133525521500da3e1ecc165542fd223e66b1e8649b32f382",
+      "exercises/practice/nucleotide-count/nucleotide-count.test.ts": "6b19a46d7d7b4767b4b19d0f5936e1a6e820dbefccd961f6f2f9361d4cc2ff97",
+      "exercises/practice/nucleotide-count/.meta/proof.ci.ts": "dcef80826c7d94c570885e884742d62f2fd51d612218449db22ce85048929fcb"
+    },
+    "after_scenario_b": {
+      "exercises/practice/nucleotide-count/nucleotide-count.ts": "774c2697bd0e0f7a133525521500da3e1ecc165542fd223e66b1e8649b32f382",
+      "exercises/practice/nucleotide-count/nucleotide-count.test.ts": "6b19a46d7d7b4767b4b19d0f5936e1a6e820dbefccd961f6f2f9361d4cc2ff97",
+      "exercises/practice/nucleotide-count/.meta/proof.ci.ts": "dcef80826c7d94c570885e884742d62f2fd51d612218449db22ce85048929fcb"
+    },
+    "after_scenario_c": {
+      "exercises/practice/nucleotide-count/nucleotide-count.ts": "774c2697bd0e0f7a133525521500da3e1ecc165542fd223e66b1e8649b32f382",
+      "exercises/practice/nucleotide-count/nucleotide-count.test.ts": "6b19a46d7d7b4767b4b19d0f5936e1a6e820dbefccd961f6f2f9361d4cc2ff97",
+      "exercises/practice/nucleotide-count/.meta/proof.ci.ts": "dcef80826c7d94c570885e884742d62f2fd51d612218449db22ce85048929fcb"
+    }
+  },
+  "all_matched": true,
+  "learner_stub_unsolved": true
+}
