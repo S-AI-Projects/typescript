@@ -1,0 +1,37 @@
+Tool versions: {'python': '3.14.5', 'node': 'v24.22.1', 'yarn': '4.5.1', 'corepack': '0.36.0'}
+solution=bowling.ts test=bowling.test.ts example=.meta/proof.ci.ts
+PASS  tests.toml has 31 canonical cases
+PASS  learner stub is unsolved in working tree
+PASS  bowling.ts unchanged in working tree
+PASS  bowling.test.ts unchanged in working tree
+PASS  .meta/proof.ci.ts unchanged in working tree
+
+--- Running Reference Implementation ---
+PASS  [reference] yarn install succeeded (exit 0)
+PASS  [reference] package.json test script exit code is 0 (got 0)
+PASS  [reference] jest exit code is 0 (got 0)
+Reference: executed=31, passed=31, failed=0
+
+--- Running Alternative Implementation ---
+PASS  [alternative] yarn install succeeded (exit 0)
+PASS  [alternative] package.json test script exit code is 0 (got 0)
+PASS  [alternative] jest exit code is 0 (got 0)
+Alternative: executed=31, passed=31, failed=0
+
+--- Verifying Equivalence & Test Requirements ---
+PASS  Reference executed > 0 tests (got 31)
+PASS  Alternative executed > 0 tests (got 31)
+PASS  Reference executed all 31 tests (got 31)
+PASS  Alternative executed all 31 tests (got 31)
+PASS  Reference passed all 31 tests without failures
+PASS  Alternative passed all 31 tests without failures
+PASS  Reference passed named case 'should be able to score a game with all zeros' (got passed)
+PASS  Alternative passed named case 'should be able to score a game with all zeros' (got passed)
+PASS  Reference passed named case 'should be able to score a game with no strikes or spares' (got passed)
+PASS  Alternative passed named case 'should be able to score a game with no strikes or spares' (got passed)
+PASS  Reference passed named case 'a spare followed by zeros is worth ten points' (got passed)
+PASS  Alternative passed named case 'a spare followed by zeros is worth ten points' (got passed)
+PASS  Both implementations agree on all enabled test cases
+PASS  working tree test file was not modified
+
+Result: BOTH APPROACHES PASSED

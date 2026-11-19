@@ -1,0 +1,38 @@
+{
+  "exercise": "exercises/practice/bowling",
+  "total_canonical_cases": 31,
+  "named_test_cases": [
+    {
+      "name": "should be able to score a game with all zeros",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected_score": 0
+    },
+    {
+      "name": "should be able to score a game with no strikes or spares",
+      "rolls": [3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6],
+      "expected_score": 90
+    },
+    {
+      "name": "a spare followed by zeros is worth ten points",
+      "rolls": [6, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected_score": 10
+    }
+  ],
+  "sample_scenarios": [
+    {
+      "scenario": "Perfect game (all strikes)",
+      "rolls": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+      "expected_score": 300
+    },
+    {
+      "scenario": "Spare followed by positive points",
+      "rolls": [6, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected_score": 16
+    },
+    {
+      "scenario": "Spare in the 10th frame with bonus roll",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 7],
+      "expected_score": 17
+    }
+  ]
+}
