@@ -1,0 +1,48 @@
+=== Strain R47-T030 Automated Verification Checker ===
+Tool versions: {'Python': '3.14.5', 'Node': 'v24.22.1', 'Yarn': '4.5.1', 'Corepack': '0.36.0'}
+
+--- Validating Configuration Paths from .meta/config.json ---
+PASS  config.json exists at /Users/surya/typescript/exercises/practice/strain/.meta/config.json
+PASS  Role 'solution' declared in config.json
+PASS  Role 'solution': path 'strain.ts' has no parent traversal
+PASS  Role 'solution': path 'strain.ts' remains inside exercise directory
+PASS  Role 'solution': file 'strain.ts' exists on disk
+PASS  Role 'test' declared in config.json
+PASS  Role 'test': path 'strain.test.ts' has no parent traversal
+PASS  Role 'test': path 'strain.test.ts' remains inside exercise directory
+PASS  Role 'test': file 'strain.test.ts' exists on disk
+PASS  Role 'example' declared in config.json
+PASS  Role 'example': path '.meta/proof.ci.ts' has no parent traversal
+PASS  Role 'example': path '.meta/proof.ci.ts' remains inside exercise directory
+PASS  Role 'example': file '.meta/proof.ci.ts' exists on disk
+Canonical test cases defined in tests.toml: 14
+PASS  canonical test count > 0 in tests.toml
+PASS  learner stub is unsolved in working tree
+PASS  strain.ts unchanged in working tree
+PASS  strain.test.ts unchanged in working tree
+PASS  .meta/proof.ci.ts unchanged in working tree
+
+--- Independently Verifying the Three Examples against Reference Implementation ---
+PASS  Node executed reference micro-example with exit code 0 (got 0)
+PASS  Case 1 (empty array) output matches expected: []
+PASS  Case 2 (keeps everything) output matches expected: [1, 3, 5]
+PASS  Case 3 (keeps nothing) output matches expected: []
+PASS  hints.md documents Case 1
+PASS  hints.md documents Case 2
+PASS  hints.md documents Case 3
+PASS  hints.md includes Decision Table section
+
+--- Running Canonical Tests against Reference in Isolated Temporary Sandbox ---
+PASS  corepack yarn install succeeded (exit 0)
+PASS  package.json test script exit code is 0 (got 0)
+PASS  Jest implementation test exit code is 0 (got 0)
+
+Test Execution Summary: total=14, passed=14, failed=0
+PASS  Executed test count > 0 (got 14)
+PASS  All canonical tests executed (14/14)
+PASS  All executed tests passed (14/14)
+PASS  No tests failed (failed=0)
+PASS  Canonical named case 'keeps on empty array returns empty array' passed (status: passed)
+PASS  Canonical named case 'keeps everything' passed (status: passed)
+PASS  Canonical named case 'keeps nothing' passed (status: passed)
+PASS  Learner stub remained completely unmodified throughout checker execution

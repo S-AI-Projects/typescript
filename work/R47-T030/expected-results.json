@@ -1,0 +1,25 @@
+{
+  "selected_cases": {
+    "case_1_empty_array": {
+      "canonical_title": "keeps on empty array returns empty array",
+      "expected_output": []
+    },
+    "case_2_keeps_everything": {
+      "canonical_title": "keeps everything",
+      "expected_output": [
+        1,
+        3,
+        5
+      ]
+    },
+    "case_3_keeps_nothing": {
+      "canonical_title": "keeps nothing",
+      "expected_output": []
+    }
+  },
+  "test_execution": {
+    "expected_total_tests": 14,
+    "expected_passed_tests": 14,
+    "expected_failed_tests": 0
+  }
+}
