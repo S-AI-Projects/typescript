@@ -1,0 +1,37 @@
+=== Connect R47-T027 Automated Verification Checker ===
+Tool versions: {'Python': '3.14.5', 'Node': 'v24.22.1', 'Yarn': '4.5.1', 'Corepack': '0.36.0'}
+Resolved paths: solution=connect.ts, test=connect.test.ts, example=.meta/proof.ci.ts
+Canonical test cases in tests.toml: 10
+PASS  canonical test count > 0 in tests.toml
+PASS  learner stub is unsolved in working tree
+PASS  connect.ts unchanged in working tree
+PASS  connect.test.ts unchanged in working tree
+PASS  .meta/proof.ci.ts unchanged in working tree
+
+--- Verifying Micro-Example (work/R47-T027/example.ts) ---
+PASS  example.ts executed with return code 0 (got 0)
+PASS  actual-results.json matches expected-results.json exactly
+PASS  Micro-example asserts player 'X' horizontal
+PASS  Micro-example asserts player 'O' vertical
+PASS  Contrasting pitfall asserts '.' falls into 'O'
+PASS  Contrasting pitfall asserts '?' falls into 'O'
+PASS  hints.md documents Player X output
+PASS  hints.md documents Player O output
+PASS  hints.md documents contrasting pitfall '.' output
+PASS  hints.md documents contrasting pitfall '?' output
+PASS  hints.md links official TypeScript equality narrowing documentation
+
+--- Running Reference Implementation Tests in Isolated Temp Dir ---
+PASS  yarn install succeeded (exit 0)
+PASS  package.json test script exit code is 0 (got 0)
+PASS  jest exit code is 0 (got 0)
+
+Test Execution Summary: total=10, passed=10, failed=0
+PASS  Executed test count > 0 (got 10)
+PASS  All canonical tests executed (10/10)
+PASS  All executed tests passed (10/10)
+PASS  No tests failed (failed=0)
+PASS  Mandatory case 'an empty board has no winner' passed (status: passed)
+PASS  Mandatory case 'X can win on a 1x1 board' passed (status: passed)
+PASS  Mandatory case 'O can win on a 1x1 board' passed (status: passed)
+PASS  Learner stub remained completely unmodified throughout checker execution

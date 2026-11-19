@@ -1,0 +1,10 @@
+{
+  "narrowed": {
+    "X": "Player X: horizontal (left to right)",
+    "O": "Player O: vertical (top to bottom)"
+  },
+  "pitfall": {
+    ".": "Player .: vertical (top to bottom)",
+    "?": "Player ?: vertical (top to bottom)"
+  }
+}
