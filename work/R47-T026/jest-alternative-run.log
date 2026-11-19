@@ -1,0 +1,48 @@
+$ corepack yarn test:implementation --ci --watchAll=false --json --outputFile=/var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmp4k9wpnhc/bowling/jest-alternative-results.json
+exit=0
+--- stdout ---
+
+--- stderr ---
+PASS ./bowling.test.ts
+  Bowling
+    Check game can be scored correctly.
+      ✓ should be able to score a game with all zeros (1 ms)
+      ✓ should be able to score a game with no strikes or spares
+      ✓ a spare followed by zeros is worth ten points
+      ✓ points scored in the roll after a spare are counted twice
+      ✓ consecutive spares each get a one roll bonus
+      ✓ a spare in the last frame gets a one roll bonus that is counted once
+      ✓ a strike earns ten points in a frame with a single roll
+      ✓ points scored in the two rolls after a strike are counted twice as a bonus
+      ✓ consecutive strikes each get the two roll bonus
+      ✓ a strike in the last frame gets a two roll bonues that is counted once
+      ✓ rolling a spare with the two roll bonus does not get a bonus roll
+      ✓ strikes with the two roll bonus do not get bonus rolls
+      ✓ last two strikes followed by only last bonus with non strike points
+      ✓ a strike with the one roll bonus after a spare in the last frame does not get a bonus
+      ✓ all strikes is a perfect game
+    Check game rules.
+      ✓ rolls cannot score negative points (4 ms)
+      ✓ a roll cannot score more than 10 points
+      ✓ two rolls in a frame cannot score more than 10 points
+      ✓ bonus roll after a strike in the last frame cannot score more than 10 points (1 ms)
+      ✓ two bonus rolls after a strike in the last frame cannot score more than 10 points
+      ✓ two bonus rolls after a strike in the last frame can score more than 10 points if one is a strike
+      ✓ the second bonus rolls after a strike in the last frame cannot be a strike if the first one is not a strike
+      ✓ second bonus roll after a strike in the last frame cannot score more than 10 points
+      ✓ an unstarted game cannot be scored
+      ✓ an incomplete game cannot be scored (1 ms)
+      ✓ cannot roll if game already has ten frames
+      ✓ bonus rolls for a strike in the last frame must be rolled before score can be calculated
+      ✓ both bonus rolls for a strike in the last frame must be rolled before score can be calculated
+      ✓ bonus roll for a spare in the last frame must be rolled before score can be calculated
+      ✓ cannot roll after bonus roll for spare
+      ✓ cannot roll after bonus rolls for strike
+
+Test Suites: 1 passed, 1 total
+Tests:       31 passed, 31 total
+Snapshots:   0 total
+Time:        0.236 s
+Ran all test suites.
+Test results written to: ../../../../../../../../var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmp4k9wpnhc/bowling/jest-alternative-results.json
+

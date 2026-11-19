@@ -1,0 +1,31 @@
+{
+  "exercise": "exercises/practice/bowling",
+  "reference_summary": {
+    "executed": 31,
+    "passed": 31,
+    "failed": 0
+  },
+  "alternative_summary": {
+    "executed": 31,
+    "passed": 31,
+    "failed": 0
+  },
+  "named_cases": [
+    {
+      "case": "should be able to score a game with all zeros",
+      "reference": "passed",
+      "alternative": "passed"
+    },
+    {
+      "case": "should be able to score a game with no strikes or spares",
+      "reference": "passed",
+      "alternative": "passed"
+    },
+    {
+      "case": "a spare followed by zeros is worth ten points",
+      "reference": "passed",
+      "alternative": "passed"
+    }
+  ],
+  "all_cases_agreement": true
+}
