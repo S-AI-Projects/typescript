@@ -1,3 +1,8 @@
+// Bucket: each individual operation (fill, empty, pourInto) is O(1) —
+// it reads or updates a single numeric field, with no loops or recursion.
+// TwoBucket.moves() uses a greedy simulation; each move eliminates at least
+// one state, so the total moves are bounded by (cap1 + 1) × (cap2 + 1).
+// In practice the algorithm terminates well within that limit.
 class Bucket {
   public name: string
   public readonly size: number
@@ -71,7 +76,7 @@ export class TwoBucket {
     }
   }
 
-  private moves(): number {
+  public moves(): number {
     this.validate()
 
     this.first.empty()
