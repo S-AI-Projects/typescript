@@ -1,0 +1,21 @@
+{
+  "selected_cases": {
+    "case_1_empty_array": [],
+    "case_2_keeps_everything": [
+      1,
+      3,
+      5
+    ],
+    "case_3_keeps_nothing": []
+  },
+  "test_execution": {
+    "total_tests": 14,
+    "passed_tests": 14,
+    "failed_tests": 0,
+    "named_cases": {
+      "keeps on empty array returns empty array": "passed",
+      "keeps everything": "passed",
+      "keeps nothing": "passed"
+    }
+  }
+}
