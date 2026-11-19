@@ -1,0 +1,10 @@
+{
+  "narrowed_inputs": [
+    "X",
+    "O"
+  ],
+  "pitfall_inputs": [
+    ".",
+    "?"
+  ]
+}

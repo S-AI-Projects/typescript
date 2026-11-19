@@ -1,0 +1,16 @@
+$ node /Users/surya/typescript/work/R47-T027/example.ts
+exit=0
+--- stdout ---
+{
+  "narrowed": {
+    "X": "Player X: horizontal (left to right)",
+    "O": "Player O: vertical (top to bottom)"
+  },
+  "pitfall": {
+    ".": "Player .: vertical (top to bottom)",
+    "?": "Player ?: vertical (top to bottom)"
+  }
+}
+
+--- stderr ---
+
