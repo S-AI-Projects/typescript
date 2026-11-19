@@ -1,0 +1,41 @@
+{
+  "metadata_validation": {
+    "real_config": {
+      "valid": true,
+      "exit_code": 0,
+      "expected_errors": []
+    },
+    "fixture_a_missing_reference": {
+      "valid": false,
+      "exit_code": 1,
+      "expected_errors": [
+        "Role 'example': Declared file '.meta/proof.ci.missing.ts' does not exist on disk"
+      ]
+    },
+    "fixture_b_missing_test": {
+      "valid": false,
+      "exit_code": 1,
+      "expected_errors": [
+        "Role 'test': Declared file 'split-second-stopwatch.test.missing.ts' does not exist on disk"
+      ]
+    },
+    "fixture_c_escaping_path": {
+      "valid": false,
+      "exit_code": 1,
+      "expected_errors": [
+        "Role 'solution': Path '../outside.ts' contains forbidden parent-directory traversal ('..')"
+      ]
+    }
+  },
+  "test_execution": {
+    "total_tests": 29,
+    "passed_tests": 29,
+    "failed_tests": 0,
+    "named_cases": {
+      "new stopwatch starts in ready state": "passed",
+      "new stopwatch's current lap has no elapsed time": "passed",
+      "new stopwatch's total has no elapsed time": "passed",
+      "new stopwatch does not have previous laps": "passed"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "real_config": {
+    "config_path": "exercises/practice/split-second-stopwatch/.meta/config.json",
+    "exercise_dir": "exercises/practice/split-second-stopwatch"
+  },
+  "fixtures": {
+    "fixture_a_missing_reference": {
+      "description": "Missing reference implementation file in files.example",
+      "config_data": {
+        "files": {
+          "solution": [
+            "split-second-stopwatch.ts"
+          ],
+          "test": [
+            "split-second-stopwatch.test.ts"
+          ],
+          "example": [
+            ".meta/proof.ci.missing.ts"
+          ]
+        }
+      }
+    },
+    "fixture_b_missing_test": {
+      "description": "Missing test suite file in files.test",
+      "config_data": {
+        "files": {
+          "solution": [
+            "split-second-stopwatch.ts"
+          ],
+          "test": [
+            "split-second-stopwatch.test.missing.ts"
+          ],
+          "example": [
+            ".meta/proof.ci.ts"
+          ]
+        }
+      }
+    },
+    "fixture_c_escaping_path": {
+      "description": "Path escaping outside exercise directory via parent-directory traversal",
+      "config_data": {
+        "files": {
+          "solution": [
+            "../outside.ts"
+          ],
+          "test": [
+            "split-second-stopwatch.test.ts"
+          ],
+          "example": [
+            ".meta/proof.ci.ts"
+          ]
+        }
+      }
+    }
+  },
+  "named_test_cases": [
+    "new stopwatch starts in ready state",
+    "new stopwatch's current lap has no elapsed time",
+    "new stopwatch's total has no elapsed time",
+    "new stopwatch does not have previous laps"
+  ]
+}
