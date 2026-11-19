@@ -1,0 +1,35 @@
+{
+  "metadata_validation": {
+    "real_config": {
+      "valid": true,
+      "exit_code": 0,
+      "output": "Validating exercise metadata: /Users/surya/typescript/exercises/practice/split-second-stopwatch/.meta/config.json\n[SUCCESS] All declared file paths are valid and exist on disk."
+    },
+    "fixture_a_missing_reference": {
+      "valid": false,
+      "exit_code": 1,
+      "output": "Validating exercise metadata: /private/var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmpxwqo8x27/fixture_a_missing_reference.json\n[ERROR] Validation failed with 1 error(s):\n  - Role 'example': Declared file '.meta/proof.ci.missing.ts' does not exist on disk (resolved to '/Users/surya/typescript/exercises/practice/split-second-stopwatch/.meta/proof.ci.missing.ts')"
+    },
+    "fixture_b_missing_test": {
+      "valid": false,
+      "exit_code": 1,
+      "output": "Validating exercise metadata: /private/var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmpxwqo8x27/fixture_b_missing_test.json\n[ERROR] Validation failed with 1 error(s):\n  - Role 'test': Declared file 'split-second-stopwatch.test.missing.ts' does not exist on disk (resolved to '/Users/surya/typescript/exercises/practice/split-second-stopwatch/split-second-stopwatch.test.missing.ts')"
+    },
+    "fixture_c_escaping_path": {
+      "valid": false,
+      "exit_code": 1,
+      "output": "Validating exercise metadata: /private/var/folders/yg/5fk995cj4z135tsbv01hh9_m0000gn/T/tmpxwqo8x27/fixture_c_escaping_path.json\n[ERROR] Validation failed with 1 error(s):\n  - Role 'solution': Path '../outside.ts' contains forbidden parent-directory traversal ('..')"
+    }
+  },
+  "test_execution": {
+    "total_tests": 29,
+    "passed_tests": 29,
+    "failed_tests": 0,
+    "named_cases": {
+      "new stopwatch starts in ready state": "passed",
+      "new stopwatch's current lap has no elapsed time": "passed",
+      "new stopwatch's total has no elapsed time": "passed",
+      "new stopwatch does not have previous laps": "passed"
+    }
+  }
+}

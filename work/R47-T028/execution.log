@@ -1,0 +1,37 @@
+=== Split-Second Stopwatch R47-T028 Automated Verification Checker ===
+Tool versions: {'Python': '3.14.5', 'Node': 'v24.22.1', 'Yarn': '4.5.1', 'Corepack': '0.36.0'}
+Resolved paths from config.json: solution=split-second-stopwatch.ts, test=split-second-stopwatch.test.ts, example=.meta/proof.ci.ts
+Canonical test cases defined in tests.toml: 29
+PASS  canonical test count > 0 in tests.toml
+PASS  learner stub is unsolved in working tree
+PASS  split-second-stopwatch.ts unchanged in working tree
+PASS  split-second-stopwatch.test.ts unchanged in working tree
+PASS  .meta/proof.ci.ts unchanged in working tree
+
+--- Testing Metadata Path Validator (tools/course_checks/r47-t028.py) ---
+PASS  Real config.json validation exited with code 0 (got 0)
+PASS  Real config.json validation reported [SUCCESS]
+PASS  fixture_a_missing_reference correctly failed with non-zero exit code (got 1)
+PASS  fixture_a_missing_reference output contains [ERROR]
+PASS  fixture_a_missing_reference error contains expected snippet 'Role 'example': Declared file '.meta/proof.ci.missing.ts' does not exist on disk'
+PASS  fixture_b_missing_test correctly failed with non-zero exit code (got 1)
+PASS  fixture_b_missing_test output contains [ERROR]
+PASS  fixture_b_missing_test error contains expected snippet 'Role 'test': Declared file 'split-second-stopwatch.test.missing.ts' does not exist on disk'
+PASS  fixture_c_escaping_path correctly failed with non-zero exit code (got 1)
+PASS  fixture_c_escaping_path output contains [ERROR]
+PASS  fixture_c_escaping_path error contains expected snippet 'Role 'solution': Path '../outside.ts' contains forbidden parent-directory traversal ('..')'
+
+--- Running Reference Implementation Tests in Isolated Temp Dir ---
+PASS  yarn install succeeded (exit 0)
+PASS  package.json test script exit code is 0 (got 0)
+PASS  jest exit code is 0 (got 0)
+
+Test Execution Summary: total=29, passed=29, failed=0
+PASS  Executed test count > 0 (got 29)
+PASS  All executed tests passed (29/29)
+PASS  No tests failed (failed=0)
+PASS  Named case 'new stopwatch starts in ready state' passed (status: passed)
+PASS  Named case 'new stopwatch's current lap has no elapsed time' passed (status: passed)
+PASS  Named case 'new stopwatch's total has no elapsed time' passed (status: passed)
+PASS  Named case 'new stopwatch does not have previous laps' passed (status: passed)
+PASS  Learner stub remained completely unmodified throughout checker execution
