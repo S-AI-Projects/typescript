@@ -1,0 +1,28 @@
+{
+  "task_id": "R47-T001",
+  "exercise": "exercises/practice/square-root",
+  "tool_versions": {
+    "node": "v26.12.1",
+    "python": "3.15.2",
+    "yarn": "4.5.1"
+  },
+  "counts": {
+    "total_cases": 6,
+    "included_cases": 6,
+    "excluded_cases": 0
+  },
+  "test_results": {
+    "total_executed": 6,
+    "passed": 6,
+    "failed": 0,
+    "executed_titles": [
+      "root of 1",
+      "root of 4",
+      "root of 25",
+      "root of 81",
+      "root of 196",
+      "root of 65025"
+    ]
+  },
+  "status": "PASSED"
+}
