@@ -1,0 +1,108 @@
+{
+  "results": {
+    "checks": {
+      "stub_is_unsolved": {
+        "ok": true,
+        "detail": ""
+      },
+      "maintenance_doc_exists": {
+        "ok": true,
+        "detail": ""
+      },
+      "doc_has_maintained_files": {
+        "ok": true,
+        "detail": ""
+      },
+      "doc_has_config_verification": {
+        "ok": true,
+        "detail": ""
+      },
+      "doc_has_class_structure": {
+        "ok": true,
+        "detail": ""
+      },
+      "doc_has_15_tests": {
+        "ok": true,
+        "detail": ""
+      },
+      "course_check_exists": {
+        "ok": true,
+        "detail": ""
+      },
+      "course_check_passes": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:newly opened account has zero balance": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:can deposit money": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:can deposit money sequentially": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:can withdraw money": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:can withdraw money sequentially": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:checking balance of closed account throw": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:deposit into closed account throws error": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:withdraw from closed account throws erro": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:close already closed account throws erro": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:open already opened account throws error": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:reopened account does not retain balance": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:cannot withdraw more than deposited": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:cannot withdraw negative amount": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:cannot deposit negative amount": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:changing balance directly throws error": {
+        "ok": true,
+        "detail": ""
+      },
+      "total_tests_15": {
+        "ok": true,
+        "detail": "Got 15/15"
+      }
+    },
+    "passed": 24,
+    "failed": 0,
+    "total_passed_ref": 15
+  },
+  "tool_versions": {
+    "node": "v26.12.1"
+  }
+}
