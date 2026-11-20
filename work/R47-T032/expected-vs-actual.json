@@ -1,0 +1,32 @@
+[
+  {
+    "title": "accumulation empty",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "accumulate squares",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "accumulate upcases",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "accumulate reversed strings",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "accumulate recursively",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  }
+]

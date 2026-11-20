@@ -1,0 +1,31 @@
+{
+  "assertion_failure": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1",
+      "numFailedTests == 4",
+      "named case 'accumulate squares' has status 'failed'",
+      "named case 'accumulate upcases' has status 'failed'"
+    ]
+  },
+  "zero_tests": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1",
+      "zero tests executed (numTotalTests == 0)",
+      "expected 5 total tests, got 0",
+      "named case missing: 'accumulation empty'",
+      "named case missing: 'accumulate squares'",
+      "named case missing: 'accumulate upcases'"
+    ]
+  },
+  "child_failure": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1"
+    ]
+  }
+}
