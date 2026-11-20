@@ -1,0 +1,156 @@
+[
+  {
+    "title": "facing north by default",
+    "named_case": true,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "facing east",
+    "named_case": true,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "facing west, at origin",
+    "named_case": true,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "at negative position facing south",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "invalid robot bearing",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "changes north to east",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "changes east to south",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "changes south to west",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "changes west to north",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "changes north to west",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "changes west to south",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "changes south to east",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "changes east to north",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "advance when facing north",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "advance when facing south",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "advance when facing east",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "advance when facing west",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "moving east and north from README",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "moving west and north",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "moving west and south",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "moving east and north",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  },
+  {
+    "title": "instruct many robots",
+    "named_case": false,
+    "expected": "passed",
+    "actual_reference": "passed",
+    "actual_alternative": "passed"
+  }
+]

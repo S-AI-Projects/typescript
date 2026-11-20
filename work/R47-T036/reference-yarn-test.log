@@ -1,0 +1,38 @@
+[tests] tsc: ✅, tstyche: ❌, jest: ✅, 
+[tests] tsc (compile)
+[tests] tstyche (implementation tests)
+PASS ./robot-simulator.test.ts
+  Robot
+    Create robot
+      ✓ facing north by default
+      ✓ facing east
+      ✓ facing west, at origin
+      ✓ at negative position facing south
+      ✓ invalid robot bearing (3 ms)
+    Rotating clockwise
+      ✓ changes north to east
+      ✓ changes east to south
+      ✓ changes south to west
+      ✓ changes west to north
+    Rotating counter-clockwise
+      ✓ changes north to west
+      ✓ changes west to south
+      ✓ changes south to east
+      ✓ changes east to north
+    Moving forward one
+      ✓ advance when facing north
+      ✓ advance when facing south
+      ✓ advance when facing east
+      ✓ advance when facing west
+    Follow series of instructions
+      ✓ moving east and north from README
+      ✓ moving west and north
+      ✓ moving west and south
+      ✓ moving east and north
+      ✓ instruct many robots (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       22 passed, 22 total
+Snapshots:   0 total
+Time:        0.186 s
+Ran all test suites.

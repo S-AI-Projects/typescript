@@ -1,0 +1,40 @@
+{
+  "exercise": "exercises/practice/robot-simulator",
+  "files": {
+    "solution": [
+      "robot-simulator.ts"
+    ],
+    "test": [
+      "robot-simulator.test.ts"
+    ],
+    "example": [
+      ".meta/proof.ci.ts"
+    ]
+  },
+  "expected_cases": 22,
+  "named_cases": [
+    "facing north by default",
+    "facing east",
+    "facing west, at origin"
+  ],
+  "alternative_file": "work/R47-T036/alternative.ts",
+  "learner_file_hashes_before": {
+    ".docs/hints.md": "4025bfded0aba1519aa9098a35f656ccf2af6b2a57b52c57710630d134047c9f",
+    ".docs/instructions.md": "a4b286f97cc7bb92ec10c1712d66d87629e9fc1519cf0c4973c3595338b46194",
+    ".meta/config.json": "57214d64573cbf56a0987f46f9f8510ce4f0286751ace30d1c6dfec51d77f63c",
+    ".meta/proof.ci.ts": "8953a49e3fed5378df651e9d5d96d97c4bdf6eecba221756a7d0fd9783e7df8a",
+    ".meta/tests.toml": "d04db78e789afe85a3295bd67499fa399676a895899c101b26c27f8782294107",
+    ".vscode/extensions.json": "f9fd265401cde8d51fbb7181b4fd05df7b3cc6d0f029f33a56fae97dfd93a9ba",
+    ".vscode/settings.json": "1e411ae5b750c123bd9f628ad0fa9de960efc43b8eef2f0962b0238d4d3e0957",
+    ".yarnrc.yml": "c9a8c149dbb1d29a1aa4da4f52d8b6a054a6d69323729bbb39a8e866a9e3649b",
+    "babel.config.cjs": "95c05efc5100e4251a1f7730763a26b0538af12745d373720e5bc6a457a7bff6",
+    "eslint.config.mjs": "4d8601ad6aa872c60f5c204d98176da6c8694efb8447842b29592c287d49465e",
+    "jest.config.cjs": "4a234463ff36ae3fe67f622e3daed4afb16146387a2a476edb9017a16ee91e7c",
+    "package.json": "a9a2f9694089085ac904f08db110dca2af7561ca3b0fe8e1c9b93780f70d2571",
+    "robot-simulator.test.ts": "280b303c27e0edfdbfc6556481e59000839f40bb251d7c158dee158d67a01907",
+    "robot-simulator.ts": "6c4485bcd1eac2ce208e84c0095e1fbe84b9dfc1f8f49b08ad45f6ece7a7c203",
+    "test-runner.mjs": "7c29542703019711d260d0d5648488179df811bc53c33a2d5f7124e88863d4d1",
+    "tsconfig.json": "546734d7d114444c3a3a31a2fff7cd1dfa76f84d1b93db017f264fd3750d7137",
+    "yarn.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

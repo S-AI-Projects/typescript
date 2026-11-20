@@ -1,0 +1,16 @@
+{
+  "static_case_count": 22,
+  "expected_cases": 22,
+  "jest_reference": {
+    "numTotalTests": 22,
+    "numPassedTests": 22,
+    "numFailedTests": 0,
+    "numPendingTests": 0
+  },
+  "jest_alternative": {
+    "numTotalTests": 22,
+    "numPassedTests": 22,
+    "numFailedTests": 0,
+    "numPendingTests": 0
+  }
+}

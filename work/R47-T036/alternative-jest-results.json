@@ -1,0 +1,396 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 22,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 22,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1795201453298,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Create robot"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Create robot facing north by default",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "facing north by default"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Create robot"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Create robot facing east",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "facing east"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Create robot"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Create robot facing west, at origin",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "facing west, at origin"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Create robot"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Create robot at negative position facing south",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "at negative position facing south"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Create robot"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Create robot invalid robot bearing",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "invalid robot bearing"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Rotating clockwise"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Rotating clockwise changes north to east",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "changes north to east"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Rotating clockwise"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Rotating clockwise changes east to south",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "changes east to south"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Rotating clockwise"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Rotating clockwise changes south to west",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "changes south to west"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Rotating clockwise"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Rotating clockwise changes west to north",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "changes west to north"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Rotating counter-clockwise"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Rotating counter-clockwise changes north to west",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "changes north to west"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Rotating counter-clockwise"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Rotating counter-clockwise changes west to south",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "changes west to south"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Rotating counter-clockwise"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Rotating counter-clockwise changes south to east",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "changes south to east"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Rotating counter-clockwise"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Rotating counter-clockwise changes east to north",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "changes east to north"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Moving forward one"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Moving forward one advance when facing north",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "advance when facing north"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Moving forward one"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Moving forward one advance when facing south",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "advance when facing south"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Moving forward one"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Moving forward one advance when facing east",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "advance when facing east"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Moving forward one"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Moving forward one advance when facing west",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "advance when facing west"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Follow series of instructions"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Follow series of instructions moving east and north from README",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "moving east and north from README"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Follow series of instructions"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Follow series of instructions moving west and north",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "moving west and north"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Follow series of instructions"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Follow series of instructions moving west and south",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "moving west and south"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Follow series of instructions"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Follow series of instructions moving east and north",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "moving east and north"
+        },
+        {
+          "ancestorTitles": [
+            "Robot",
+            "Follow series of instructions"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Robot Follow series of instructions instruct many robots",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 6,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "instruct many robots"
+        }
+      ],
+      "endTime": 1795201453485,
+      "message": "",
+      "name": "/private<TMP>/alternative/robot-simulator.test.ts",
+      "startTime": 1795201453313,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}
