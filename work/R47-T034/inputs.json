@@ -1,0 +1,39 @@
+{
+  "exercise": "exercises/practice/collatz-conjecture",
+  "files": {
+    "solution": [
+      "collatz-conjecture.ts"
+    ],
+    "test": [
+      "collatz-conjecture.test.ts"
+    ],
+    "example": [
+      ".meta/proof.ci.ts"
+    ]
+  },
+  "expected_cases": 7,
+  "named_cases": [
+    "zero steps for one",
+    "divide if even",
+    "even and odd steps"
+  ],
+  "learner_file_hashes_before": {
+    ".docs/instructions.md": "8604e02ab9ecf86a3b16bb2dd45c94428f613579797909f4d81389add639ed2b",
+    ".docs/introduction.md": "0f6dea108e70c6b98b7a95bc48d2c2346d96fdac3340159e0484dc392cec9a8f",
+    ".meta/config.json": "eaae12ffeac367a92122296137a9c555d1708bc30e2c40e0df831a60a0f0c482",
+    ".meta/proof.ci.ts": "55d268d715ee0bfaf94c11ac5d7e1091bf3934072f2b8935886b1014698a6699",
+    ".meta/tests.toml": "3dc9ca960ada73356653ec335a73ef0301cc4c1b973c0615730e90fe044f780f",
+    ".vscode/extensions.json": "f9fd265401cde8d51fbb7181b4fd05df7b3cc6d0f029f33a56fae97dfd93a9ba",
+    ".vscode/settings.json": "1e411ae5b750c123bd9f628ad0fa9de960efc43b8eef2f0962b0238d4d3e0957",
+    ".yarnrc.yml": "c9a8c149dbb1d29a1aa4da4f52d8b6a054a6d69323729bbb39a8e866a9e3649b",
+    "babel.config.cjs": "95c05efc5100e4251a1f7730763a26b0538af12745d373720e5bc6a457a7bff6",
+    "collatz-conjecture.test.ts": "a95aad1d262940e0aef674281c6fa6f95f01199c06b1ddc5e8aa9d55f151c506",
+    "collatz-conjecture.ts": "4400bd82780c7c2b33e7150198e9f019abad0fa130b4c6f50aa04464639f8758",
+    "eslint.config.mjs": "4d8601ad6aa872c60f5c204d98176da6c8694efb8447842b29592c287d49465e",
+    "jest.config.cjs": "4a234463ff36ae3fe67f622e3daed4afb16146387a2a476edb9017a16ee91e7c",
+    "package.json": "4df6139101d825f25c7063e14ca246cae81e2b750278ea7bf2d61faaa6530929",
+    "test-runner.mjs": "7c29542703019711d260d0d5648488179df811bc53c33a2d5f7124e88863d4d1",
+    "tsconfig.json": "546734d7d114444c3a3a31a2fff7cd1dfa76f84d1b93db017f264fd3750d7137",
+    "yarn.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

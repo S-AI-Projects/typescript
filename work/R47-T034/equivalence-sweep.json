@@ -1,0 +1,52 @@
+{
+  "range": "1..100000",
+  "error_inputs": [
+    "0",
+    "-15",
+    "1.5",
+    "NaN"
+  ],
+  "total_checked": 100004,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "samples": {
+    "1": {
+      "ok": true,
+      "value": 0
+    },
+    "12": {
+      "ok": true,
+      "value": 9
+    },
+    "16": {
+      "ok": true,
+      "value": 4
+    },
+    "100000": {
+      "ok": true,
+      "value": 128
+    }
+  },
+  "error_results": {
+    "0": {
+      "ok": false,
+      "name": "Error",
+      "message": "Only positive integers are allowed"
+    },
+    "-15": {
+      "ok": false,
+      "name": "Error",
+      "message": "Only positive integers are allowed"
+    },
+    "1.5": {
+      "ok": false,
+      "name": "Error",
+      "message": "Only positive integers are allowed"
+    },
+    "NaN": {
+      "ok": false,
+      "name": "Error",
+      "message": "Only positive integers are allowed"
+    }
+  }
+}
