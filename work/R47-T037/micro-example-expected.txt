@@ -1,0 +1,5 @@
+nearest=1
+empty=none
+falsy(0)=none
+strict(0)=hit #0
+strict(undefined)=none

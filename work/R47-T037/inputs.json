@@ -1,0 +1,41 @@
+{
+  "exercise": "exercises/practice/prism",
+  "files": {
+    "solution": [
+      "prism.ts"
+    ],
+    "test": [
+      "prism.test.ts"
+    ],
+    "example": [
+      ".meta/proof.ci.ts"
+    ]
+  },
+  "expected_cases": 14,
+  "named_cases": [
+    "zero prisms",
+    "one prism one hit",
+    "one prism zero hits"
+  ],
+  "hints_file": "exercises/practice/prism/.docs/hints.md",
+  "learner_file_hashes_before": {
+    ".docs/hints.md": "6e5937e1bf1eebe0ec8b33600f19e0a06a8556542cacae1774c3194967c27ad2",
+    ".docs/instructions.md": "9dfa600a13b803a02ed6089ee0cce5c21c9030a5a703c1fcdd2a1c481a8670d6",
+    ".docs/introduction.md": "aa62185fd0cbd42ed9adfd8e7337c8755f610710fe85d03df54d8cf03fc80567",
+    ".meta/config.json": "7bb62e77755e9fd83ba2b05940e8f516de8a29053520b3974743ed9af7e60705",
+    ".meta/proof.ci.ts": "1302034401e4c5e9be5865c46fbbe61bb72037a857ab9bfdb78b10e27f801e25",
+    ".meta/tests.toml": "7cbb40b039683e71498dcf0961a3694e7b80301fb8000da0fb801468f2e06c08",
+    ".vscode/extensions.json": "f9fd265401cde8d51fbb7181b4fd05df7b3cc6d0f029f33a56fae97dfd93a9ba",
+    ".vscode/settings.json": "1e411ae5b750c123bd9f628ad0fa9de960efc43b8eef2f0962b0238d4d3e0957",
+    ".yarnrc.yml": "c9a8c149dbb1d29a1aa4da4f52d8b6a054a6d69323729bbb39a8e866a9e3649b",
+    "babel.config.cjs": "95c05efc5100e4251a1f7730763a26b0538af12745d373720e5bc6a457a7bff6",
+    "eslint.config.mjs": "4d8601ad6aa872c60f5c204d98176da6c8694efb8447842b29592c287d49465e",
+    "jest.config.cjs": "4a234463ff36ae3fe67f622e3daed4afb16146387a2a476edb9017a16ee91e7c",
+    "package.json": "9d98123b74c172ed3f97b89712584a4d5e3a7a02749afad93160d11283fcc267",
+    "prism.test.ts": "e14e38533575e494d4ea28d5f29b409c3feb1d7094e3ef6f30e406922254dbbd",
+    "prism.ts": "e0b44600fb8e4ff2fb04ba70fa50eb59e432600ac6ee57cb1480bef0f406c591",
+    "test-runner.mjs": "7c29542703019711d260d0d5648488179df811bc53c33a2d5f7124e88863d4d1",
+    "tsconfig.json": "546734d7d114444c3a3a31a2fff7cd1dfa76f84d1b93db017f264fd3750d7137",
+    "yarn.lock": "0e77f5fc47029d7ff51cd1b9ea6c8437818517d81ebc2f289d2b9b62cbed5e00"
+  }
+}

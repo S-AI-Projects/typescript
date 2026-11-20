@@ -1,0 +1,23 @@
+PASS ./prism.test.ts
+  Prism
+    ✓ zero prisms (1 ms)
+    ✓ one prism one hit
+    ✓ one prism zero hits
+    ✓ going up zero hits
+    ✓ going down zero hits
+    ✓ going left zero hits
+    ✓ negative angle
+    ✓ large angle
+    ✓ upward refraction two hits
+    ✓ downward refraction two hits
+    ✓ same prism twice
+    ✓ simple path
+    ✓ multiple prisms floating point precision (1 ms)
+    ✓ complex path with multiple prisms floating point precision
+
+Test Suites: 1 passed, 1 total
+Tests:       14 passed, 14 total
+Snapshots:   0 total
+Time:        0.188 s
+Ran all test suites.
+Test results written to: ../../../../../../../..<TMP>/jest-results.json

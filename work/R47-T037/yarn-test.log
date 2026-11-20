@@ -1,0 +1,25 @@
+[tests] tsc: ✅, tstyche: ❌, jest: ✅, 
+[tests] tsc (compile)
+[tests] tstyche (implementation tests)
+PASS ./prism.test.ts
+  Prism
+    ✓ zero prisms (1 ms)
+    ✓ one prism one hit
+    ✓ one prism zero hits
+    ✓ going up zero hits
+    ✓ going down zero hits
+    ✓ going left zero hits
+    ✓ negative angle
+    ✓ large angle (1 ms)
+    ✓ upward refraction two hits
+    ✓ downward refraction two hits
+    ✓ same prism twice
+    ✓ simple path
+    ✓ multiple prisms floating point precision
+    ✓ complex path with multiple prisms floating point precision (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       14 passed, 14 total
+Snapshots:   0 total
+Time:        0.189 s
+Ran all test suites.
