@@ -1,11 +1,16 @@
+/**
+ * Doubly-linked node representing a station element in the list.
+ * Exercise-specific invariant:
+ * - `next` points towards the predecessor (approaching the head/pop-end).
+ * - `prev` points towards the successor (approaching the tail/shift-end).
+ * - An empty list maintains head === tail === undefined.
+ */
 class Node<T> {
-  private value: T
-  private next: Node<T> | undefined
-  private prev: Node<T> | undefined
-
-  constructor(value: T) {
-    this.value = value
-  }
+  constructor(
+    public readonly value: T,
+    public next: Node<T> | undefined = undefined,
+    public prev: Node<T> | undefined = undefined
+  ) {}
 
   public getNext(): Node<T> | undefined {
     return this.next

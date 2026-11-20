@@ -1,0 +1,33 @@
+{
+  "task_id": "R47-T004",
+  "exercise": "exercises/practice/linked-list",
+  "tool_versions": {
+    "node": "v26.12.1",
+    "python": "3.15.2",
+    "yarn": "4.5.1"
+  },
+  "named_cases": [
+    "add/extract elements to the end of the list with push/pop",
+    "extract elements from the beginning of the list with shift",
+    "add/extract elements from the beginning of the list with unshift/shift"
+  ],
+  "test_results": {
+    "total_executed": 11,
+    "passed": 11,
+    "failed": 0,
+    "executed_titles": [
+      "add/extract elements to the end of the list with push/pop",
+      "extract elements from the beginning of the list with shift",
+      "add/extract elements from the beginning of the list with unshift/shift",
+      "unshift/pop",
+      "example",
+      "can count its elements",
+      "sets head/tail after popping last element",
+      "sets head/tail after shifting last element",
+      "deletes the element with the specified value from the list",
+      "deletes the only element",
+      "delete does not modify the list if the element is not found"
+    ]
+  },
+  "status": "PASSED"
+}
