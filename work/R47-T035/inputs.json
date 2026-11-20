@@ -1,0 +1,38 @@
+{
+  "exercise": "exercises/practice/darts",
+  "files": {
+    "solution": [
+      "darts.ts"
+    ],
+    "test": [
+      "darts.test.ts"
+    ],
+    "example": [
+      ".meta/proof.ci.ts"
+    ]
+  },
+  "expected_cases": 13,
+  "named_cases": [
+    "Missed target",
+    "On the outer circle",
+    "On the middle circle"
+  ],
+  "learner_file_hashes_before": {
+    ".docs/instructions.md": "080480cf90b3a55b22e56907726dda736e4540f5713dd3ac8ca6f9dc2a0b09c6",
+    ".meta/config.json": "0b206d7300e4dd83c347bec041ad727122287dfc003d7dd31e78617e3909da90",
+    ".meta/proof.ci.ts": "318ef7ae6773a2f33000d8e67f280d534ca34fdafb967fb624d27f76836516b8",
+    ".meta/tests.toml": "33ab217bc9701a797c1751683b4f3a7ef896626cd181c46c7558e659a0c5c2a6",
+    ".vscode/extensions.json": "f9fd265401cde8d51fbb7181b4fd05df7b3cc6d0f029f33a56fae97dfd93a9ba",
+    ".vscode/settings.json": "1e411ae5b750c123bd9f628ad0fa9de960efc43b8eef2f0962b0238d4d3e0957",
+    ".yarnrc.yml": "c9a8c149dbb1d29a1aa4da4f52d8b6a054a6d69323729bbb39a8e866a9e3649b",
+    "babel.config.cjs": "95c05efc5100e4251a1f7730763a26b0538af12745d373720e5bc6a457a7bff6",
+    "darts.test.ts": "b2c6449960d772775b7dd83469c8716a10a3826fc6ea7a7fa19441a6cbc63be2",
+    "darts.ts": "d0d8025b50c0c4ce762898add17515864e6e729b898ae8e2ca4fd81fa6723da8",
+    "eslint.config.mjs": "4d8601ad6aa872c60f5c204d98176da6c8694efb8447842b29592c287d49465e",
+    "jest.config.cjs": "4a234463ff36ae3fe67f622e3daed4afb16146387a2a476edb9017a16ee91e7c",
+    "package.json": "9426d8f243d77ae1904a9d804929b4c5b30efc3c7802f85523b878da99d8f6a7",
+    "test-runner.mjs": "7c29542703019711d260d0d5648488179df811bc53c33a2d5f7124e88863d4d1",
+    "tsconfig.json": "546734d7d114444c3a3a31a2fff7cd1dfa76f84d1b93db017f264fd3750d7137",
+    "yarn.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
