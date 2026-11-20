@@ -1,0 +1,7 @@
+TEMP_DIR: <RUNNER_TMP>
+STEP: yarn install
+STEP: yarn test
+STEP: yarn test:implementation
+RESULT: PASS - executed 22 cases
+HASH_CHECK: PASS - learner files unchanged
+CLEANUP_CHECK: PASS - temp dir removed: <RUNNER_TMP>

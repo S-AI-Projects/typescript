@@ -1,0 +1,38 @@
+{
+  "exercise": "exercises/practice/isbn-verifier",
+  "files": {
+    "solution": [
+      "isbn-verifier.ts"
+    ],
+    "test": [
+      "isbn-verifier.test.ts"
+    ],
+    "example": [
+      ".meta/proof.ci.ts"
+    ]
+  },
+  "expected_cases": 22,
+  "named_cases": [
+    "valid isbn",
+    "invalid isbn check digit",
+    "valid isbn with a check digit of 10"
+  ],
+  "learner_file_hashes_before": {
+    ".docs/instructions.md": "f5fb98c13a958239286c75feaabfbd345cc7b8d09198921739f2740d9e4e0572",
+    ".meta/config.json": "720477265c50fdbeb299ea3f90b501781d227e29de16f44c33cb82cd1daecf4a",
+    ".meta/proof.ci.ts": "c7062acb5d4b0d9db115d738d6447b4e04f8bae265c0f3743030e37badf5c565",
+    ".meta/tests.toml": "e5d3f7f24be4b537b0d626b4e34991dc18799cdb18eb763fa4e5d9334efc6097",
+    ".vscode/extensions.json": "f9fd265401cde8d51fbb7181b4fd05df7b3cc6d0f029f33a56fae97dfd93a9ba",
+    ".vscode/settings.json": "1e411ae5b750c123bd9f628ad0fa9de960efc43b8eef2f0962b0238d4d3e0957",
+    ".yarnrc.yml": "c9a8c149dbb1d29a1aa4da4f52d8b6a054a6d69323729bbb39a8e866a9e3649b",
+    "babel.config.cjs": "95c05efc5100e4251a1f7730763a26b0538af12745d373720e5bc6a457a7bff6",
+    "eslint.config.mjs": "4d8601ad6aa872c60f5c204d98176da6c8694efb8447842b29592c287d49465e",
+    "isbn-verifier.test.ts": "f498321610985480817ce13cb871c11aca0f25c394d7067a09fc916b4d711191",
+    "isbn-verifier.ts": "d8820f3f7d5560e227f5983d0ec6da948160759add7123bcf324e4e07047ef38",
+    "jest.config.cjs": "4a234463ff36ae3fe67f622e3daed4afb16146387a2a476edb9017a16ee91e7c",
+    "package.json": "9f4922eda78e0a192bff4b40f6a6fefd7dacdf5803b62f39e98b7655c309804c",
+    "test-runner.mjs": "7c29542703019711d260d0d5648488179df811bc53c33a2d5f7124e88863d4d1",
+    "tsconfig.json": "546734d7d114444c3a3a31a2fff7cd1dfa76f84d1b93db017f264fd3750d7137",
+    "yarn.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,7 @@
+TEMP_DIR: <RUNNER_TMP>
+STEP: yarn install
+STEP: yarn lint:types
+STEP: yarn test:implementation
+FAIL: evaluation failed: zero tests executed (total=22, pending=22); numPendingTests == 22
+HASH_CHECK: PASS - learner files unchanged
+CLEANUP_CHECK: PASS - temp dir removed: <RUNNER_TMP>
