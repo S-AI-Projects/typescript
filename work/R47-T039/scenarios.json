@@ -1,0 +1,35 @@
+[
+  {
+    "scenario": "real_reference",
+    "expected_exit": "0",
+    "actual_exit": 0,
+    "temp_dir_removed": true,
+    "learner_hashes_unchanged": true,
+    "passed": true
+  },
+  {
+    "scenario": "failing_reference",
+    "expected_exit": "non-zero",
+    "actual_exit": 1,
+    "temp_dir_removed": true,
+    "learner_hashes_unchanged": true,
+    "passed": true
+  },
+  {
+    "scenario": "empty_test_selection",
+    "expected_exit": "non-zero (zero-test guard)",
+    "actual_exit": 1,
+    "temp_dir_removed": true,
+    "learner_hashes_unchanged": true,
+    "passed": true
+  },
+  {
+    "scenario": "interrupted_run",
+    "expected_exit": "non-zero",
+    "actual_exit": 130,
+    "sent_interrupt": true,
+    "temp_dir_removed": true,
+    "learner_hashes_unchanged": true,
+    "passed": true
+  }
+]

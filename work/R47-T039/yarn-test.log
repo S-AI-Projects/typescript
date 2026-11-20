@@ -1,0 +1,33 @@
+[tests] tsc: ✅, tstyche: ❌, jest: ✅, 
+[tests] tsc (compile)
+[tests] tstyche (implementation tests)
+PASS ./isbn-verifier.test.ts
+  ISBN Verifier
+    ✓ valid isbn (1 ms)
+    ✓ invalid isbn check digit
+    ✓ valid isbn with a check digit of 10
+    ✓ check digit is a character other than X
+    ✓ invalid check digit in isbn is not treated as zero
+    ✓ invalid character in isbn is not treated as zero (1 ms)
+    ✓ X is only valid as a check digit
+    ✓ only one check digit is allowed
+    ✓ X is not substituted by the value 10
+    ✓ valid isbn without separating dashes
+    ✓ isbn without separating dashes and X as check digit
+    ✓ isbn without check digit and dashes
+    ✓ too long isbn
+    ✓ too long isbn and no dashes
+    ✓ too short isbn
+    ✓ isbn without check digit
+    ✓ check digit of X should not be used for 0
+    ✓ empty isbn
+    ✓ input is 9 characters
+    ✓ invalid characters are not ignored after checking length
+    ✓ invalid characters are not ignored before checking length
+    ✓ input is too long but contains a valid isbn
+
+Test Suites: 1 passed, 1 total
+Tests:       22 passed, 22 total
+Snapshots:   0 total
+Time:        0.178 s
+Ran all test suites.

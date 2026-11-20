@@ -1,0 +1,374 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 22,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 22,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1795202136634,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier valid isbn",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "valid isbn"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier invalid isbn check digit",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "invalid isbn check digit"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier valid isbn with a check digit of 10",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "valid isbn with a check digit of 10"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier check digit is a character other than X",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "check digit is a character other than X"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier invalid check digit in isbn is not treated as zero",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "invalid check digit in isbn is not treated as zero"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier invalid character in isbn is not treated as zero",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "invalid character in isbn is not treated as zero"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier X is only valid as a check digit",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "X is only valid as a check digit"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier only one check digit is allowed",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "only one check digit is allowed"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier X is not substituted by the value 10",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "X is not substituted by the value 10"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier valid isbn without separating dashes",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "valid isbn without separating dashes"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier isbn without separating dashes and X as check digit",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "isbn without separating dashes and X as check digit"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier isbn without check digit and dashes",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "isbn without check digit and dashes"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier too long isbn",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "too long isbn"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier too long isbn and no dashes",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "too long isbn and no dashes"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier too short isbn",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "too short isbn"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier isbn without check digit",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "isbn without check digit"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier check digit of X should not be used for 0",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "check digit of X should not be used for 0"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier empty isbn",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "empty isbn"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier input is 9 characters",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "input is 9 characters"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier invalid characters are not ignored after checking length",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "invalid characters are not ignored after checking length"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier invalid characters are not ignored before checking length",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "invalid characters are not ignored before checking length"
+        },
+        {
+          "ancestorTitles": [
+            "ISBN Verifier"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ISBN Verifier input is too long but contains a valid isbn",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "input is too long but contains a valid isbn"
+        }
+      ],
+      "endTime": 1795202136810,
+      "message": "",
+      "name": "/private<TMP>/isbn-verifier/isbn-verifier.test.ts",
+      "startTime": 1795202136649,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}

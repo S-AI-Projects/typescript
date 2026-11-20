@@ -1,0 +1,136 @@
+TEMP_DIR: <RUNNER_TMP>
+STEP: yarn install
+STEP: yarn test
+FAIL: corepack yarn test exited 253
+[tests] tsc: ✅, tstyche: ❌, jest: ✅, 
+[tests] tsc (compile)
+[tests] tstyche (implementation tests)
+FAIL ./isbn-verifier.test.ts
+  ISBN Verifier
+    ✕ valid isbn (1 ms)
+    ✕ invalid isbn check digit (1 ms)
+    ✕ valid isbn with a check digit of 10
+    ✓ check digit is a character other than X
+    ✓ invalid check digit in isbn is not treated as zero
+    ✓ invalid character in isbn is not treated as zero
+    ✓ X is only valid as a check digit
+    ✓ only one check digit is allowed
+    ✓ X is not substituted by the value 10
+    ✕ valid isbn without separating dashes
+    ✕ isbn without separating dashes and X as check digit
+    ✓ isbn without check digit and dashes
+    ✓ too long isbn
+    ✓ too long isbn and no dashes
+    ✓ too short isbn
+    ✓ isbn without check digit
+    ✕ check digit of X should not be used for 0
+    ✓ empty isbn
+    ✓ input is 9 characters
+    ✓ invalid characters are not ignored after checking length
+    ✓ invalid characters are not ignored before checking length
+    ✓ input is too long but contains a valid isbn
+
+  ● ISBN Verifier › valid isbn
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      4 | describe('ISBN Verifier', () => {
+      5 |   it('valid isbn', () => {
+    > 6 |     expect(isValid('3-598-21508-8')).toBeTruthy()
+        |                                      ^
+      7 |   })
+      8 |
+      9 |   it('invalid isbn check digit', () => {
+
+      at Object.toBeTruthy (isbn-verifier.test.ts:6:38)
+
+  ● ISBN Verifier › invalid isbn check digit
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+       8 |
+       9 |   it('invalid isbn check digit', () => {
+    > 10 |     expect(isValid('3-598-21508-9')).toBeFalsy()
+         |                                      ^
+      11 |   })
+      12 |
+      13 |   it('valid isbn with a check digit of 10', () => {
+
+      at Object.toBeFalsy (isbn-verifier.test.ts:10:38)
+
+  ● ISBN Verifier › valid isbn with a check digit of 10
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      12 |
+      13 |   it('valid isbn with a check digit of 10', () => {
+    > 14 |     expect(isValid('3-598-21507-X')).toBeTruthy()
+         |                                      ^
+      15 |   })
+      16 |
+      17 |   it('check digit is a character other than X', () => {
+
+      at Object.toBeTruthy (isbn-verifier.test.ts:14:38)
+
+  ● ISBN Verifier › valid isbn without separating dashes
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |
+      41 |   it('valid isbn without separating dashes', () => {
+    > 42 |     expect(isValid('3598215088')).toBeTruthy()
+         |                                   ^
+      43 |   })
+      44 |
+      45 |   it('isbn without separating dashes and X as check digit', () => {
+
+      at Object.toBeTruthy (isbn-verifier.test.ts:42:35)
+
+  ● ISBN Verifier › isbn without separating dashes and X as check digit
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      44 |
+      45 |   it('isbn without separating dashes and X as check digit', () => {
+    > 46 |     expect(isValid('359821507X')).toBeTruthy()
+         |                                   ^
+      47 |   })
+      48 |
+      49 |   it('isbn without check digit and dashes', () => {
+
+      at Object.toBeTruthy (isbn-verifier.test.ts:46:35)
+
+  ● ISBN Verifier › check digit of X should not be used for 0
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      68 |
+      69 |   it('check digit of X should not be used for 0', () => {
+    > 70 |     expect(isValid('3-598-21515-X')).toBeFalsy()
+         |                                      ^
+      71 |   })
+      72 |
+      73 |   it('empty isbn', () => {
+
+      at Object.toBeFalsy (isbn-verifier.test.ts:70:38)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 16 passed, 22 total
+Snapshots:   0 total
+Time:        0.186 s
+Ran all test suites.
+
+HASH_CHECK: PASS - learner files unchanged
+CLEANUP_CHECK: PASS - temp dir removed: <RUNNER_TMP>

@@ -1,0 +1,5 @@
+TEMP_DIR: <RUNNER_TMP>
+STEP: yarn install
+INTERRUPTED: Interrupted by signal 2
+HASH_CHECK: PASS - learner files unchanged
+CLEANUP_CHECK: PASS - temp dir removed: <RUNNER_TMP>

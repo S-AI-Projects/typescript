@@ -1,0 +1,134 @@
+[
+  {
+    "title": "valid isbn",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "invalid isbn check digit",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "valid isbn with a check digit of 10",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "check digit is a character other than X",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "invalid check digit in isbn is not treated as zero",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "invalid character in isbn is not treated as zero",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "X is only valid as a check digit",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "only one check digit is allowed",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "X is not substituted by the value 10",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "valid isbn without separating dashes",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "isbn without separating dashes and X as check digit",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "isbn without check digit and dashes",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "too long isbn",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "too long isbn and no dashes",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "too short isbn",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "isbn without check digit",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "check digit of X should not be used for 0",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "empty isbn",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "input is 9 characters",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "invalid characters are not ignored after checking length",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "invalid characters are not ignored before checking length",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "input is too long but contains a valid isbn",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  }
+]
