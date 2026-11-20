@@ -1,0 +1,89 @@
+{
+  "results": {
+    "checks": {
+      "stub_is_unsolved": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_md_exists": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_has_regex_approach": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_has_loop_approach": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_has_edge_cases": {
+        "ok": true,
+        "detail": ""
+      },
+      "encode:empty string": {
+        "ok": true,
+        "detail": ""
+      },
+      "encode:single characters only are encoded without count": {
+        "ok": true,
+        "detail": ""
+      },
+      "encode:string with no single characters": {
+        "ok": true,
+        "detail": ""
+      },
+      "encode:single characters mixed with repeated characters": {
+        "ok": true,
+        "detail": ""
+      },
+      "encode:multiple whitespace mixed in string": {
+        "ok": true,
+        "detail": ""
+      },
+      "encode:lowercase characters": {
+        "ok": true,
+        "detail": ""
+      },
+      "decode:single characters only": {
+        "ok": true,
+        "detail": ""
+      },
+      "decode:string with no single characters": {
+        "ok": true,
+        "detail": ""
+      },
+      "decode:single characters with repeated characters": {
+        "ok": true,
+        "detail": ""
+      },
+      "decode:multiple whitespace mixed in string": {
+        "ok": true,
+        "detail": ""
+      },
+      "decode:lower case string": {
+        "ok": true,
+        "detail": ""
+      },
+      "roundtrip:encode followed by decode gives original string": {
+        "ok": true,
+        "detail": ""
+      },
+      "total_tests_passed_13": {
+        "ok": true,
+        "detail": "Got 13/13"
+      },
+      "alternative_passes_all_tests": {
+        "ok": true,
+        "detail": ""
+      }
+    },
+    "passed": 19,
+    "failed": 0,
+    "total_passed_ref": 13
+  },
+  "tool_versions": {
+    "node": "v26.12.1",
+    "yarn": ""
+  }
+}
