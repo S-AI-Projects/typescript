@@ -1,0 +1,16 @@
+{
+  "static_case_count": 5,
+  "expected_cases": 5,
+  "jest_original": {
+    "numTotalTests": 5,
+    "numPassedTests": 5,
+    "numFailedTests": 0,
+    "numPendingTests": 0
+  },
+  "jest_mutant": {
+    "numTotalTests": 5,
+    "numPassedTests": 3,
+    "numFailedTests": 2,
+    "numPendingTests": 0
+  }
+}

@@ -1,0 +1,65 @@
+FAIL ./sieve.test.ts
+  Sieve
+    ✓ no primes under two (1 ms)
+    ✓ find first prime (1 ms)
+    ✕ find primes up to 10 (1 ms)
+    ✓ limit is prime
+    ✕ find primes up to 1000 (1 ms)
+
+  ● Sieve › find primes up to 10
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 1
+
+      Array [
+        2,
+        3,
+        5,
+        7,
+    +   10,
+      ]
+
+      15 |   it('find primes up to 10', () => {
+      16 |     const expected = [2, 3, 5, 7]
+    > 17 |     expect(primes(10)).toEqual(expected)
+         |                        ^
+      18 |   })
+      19 |
+      20 |   it('limit is prime', () => {
+
+      at Object.toEqual (sieve.test.ts:17:24)
+
+  ● Sieve › find primes up to 1000
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 1
+
+    @@ -165,6 +165,7 @@
+        971,
+        977,
+        983,
+        991,
+        997,
+    +   1000,
+      ]
+
+      37 |       911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997,
+      38 |     ]
+    > 39 |     expect(primes(1000)).toEqual(expected)
+         |                          ^
+      40 |   })
+      41 | })
+      42 |
+
+      at Object.toEqual (sieve.test.ts:39:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        0.188 s
+Ran all test suites.
+Test results written to: ../../../../../../../..<TMP>/mutant-jest-results.json
