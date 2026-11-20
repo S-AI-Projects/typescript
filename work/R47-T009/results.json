@@ -1,0 +1,44 @@
+{
+  "results": {
+    "checks": {
+      "stub_is_unsolved": {
+        "ok": true,
+        "detail": ""
+      },
+      "tool_exists": {
+        "ok": true,
+        "detail": "/Users/shirish/Desktop/typescript/tools/course_checks/r47-t009.py"
+      },
+      "tool_passes": {
+        "ok": true,
+        "detail": ""
+      },
+      "immutability_verified": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:no name given": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:a name given": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:another name given": {
+        "ok": true,
+        "detail": ""
+      },
+      "total_tests_3": {
+        "ok": true,
+        "detail": "Got 3/3"
+      }
+    },
+    "passed": 8,
+    "failed": 0,
+    "total_passed_ref": 3
+  },
+  "tool_versions": {
+    "node": "v26.12.1"
+  }
+}
