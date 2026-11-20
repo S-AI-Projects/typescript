@@ -1,0 +1,32 @@
+{
+  "task_id": "R47-T002",
+  "exercise": "exercises/practice/rotational-cipher",
+  "tool_versions": {
+    "node": "v26.12.1",
+    "python": "3.15.2",
+    "yarn": "4.5.1"
+  },
+  "named_cases": [
+    "rotate a by 1",
+    "rotate a by 26, same output as input",
+    "rotate a by 0, same output as input"
+  ],
+  "test_results": {
+    "total_executed": 10,
+    "passed": 10,
+    "failed": 0,
+    "executed_titles": [
+      "rotate a by 1",
+      "rotate a by 26, same output as input",
+      "rotate a by 0, same output as input",
+      "rotate m by 13",
+      "rotate n by 13 with wrap around alphabet",
+      "rotate capital letters",
+      "rotate spaces",
+      "rotate numbers",
+      "rotate punctuation",
+      "rotate all letters"
+    ]
+  },
+  "status": "PASSED"
+}
