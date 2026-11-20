@@ -1,0 +1,9 @@
+{
+  "token_similarity_ratio": 0.1543,
+  "reference_token_count": 526,
+  "alternative_token_count": 446,
+  "uses_modulo_and_tables": true,
+  "same_22_cases_executed": true,
+  "reference_passed": 22,
+  "alternative_passed": 22
+}
