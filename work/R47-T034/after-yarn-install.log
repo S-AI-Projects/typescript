@@ -1,0 +1,16 @@
+➤ YN0000: · Yarn 4.5.1
+➤ YN0000: ┌ Resolution step
+➤ YN0085: │ + @exercism/babel-preset-typescript@npm:0.6.0, @exercism/eslint-config-typescript@npm:0.8.0, @jest/globals@npm:29.7.0, @types/node@npm:22.7.9, and 578 more.
+➤ YN0000: └ Completed in 2s 464ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0002: │ @exercism/typescript-collatz-conjecture@workspace:. doesn't provide @babel/core (pfe2be), requested by babel-jest.
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Link step
+➤ YN0007: │ core-js@npm:3.38.1 must be built because it never has been before or the last one failed
+➤ YN0007: │ core-js@npm:3.51.0 must be built because it never has been before or the last one failed
+➤ YN0000: └ Completed in 1s 431ms
+➤ YN0000: · Done with warnings in 3s 986ms

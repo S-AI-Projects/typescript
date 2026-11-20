@@ -1,0 +1,16 @@
+PASS ./collatz-conjecture.test.ts
+  CollatzConjecture
+    ✓ zero steps for one (1 ms)
+    ✓ divide if even
+    ✓ even and odd steps
+    ✓ Large number of even and odd steps
+    ✓ zero is an error (2 ms)
+    ✓ negative value is an error
+    ✓ non-integer value is an error
+
+Test Suites: 1 passed, 1 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        0.177 s
+Ran all test suites.
+Test results written to: ../../../../../../../..<TMP>/after-jest-results.json

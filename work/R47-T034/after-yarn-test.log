@@ -1,0 +1,18 @@
+[tests] tsc: ✅, tstyche: ❌, jest: ✅, 
+[tests] tsc (compile)
+[tests] tstyche (implementation tests)
+PASS ./collatz-conjecture.test.ts
+  CollatzConjecture
+    ✓ zero steps for one (1 ms)
+    ✓ divide if even
+    ✓ even and odd steps (1 ms)
+    ✓ Large number of even and odd steps
+    ✓ zero is an error (1 ms)
+    ✓ negative value is an error (1 ms)
+    ✓ non-integer value is an error
+
+Test Suites: 1 passed, 1 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        0.175 s
+Ran all test suites.

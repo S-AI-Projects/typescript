@@ -1,0 +1,32 @@
+{
+  "assertion_failure": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1",
+      "numFailedTests == 4",
+      "named case 'zero steps for one' has status 'failed'",
+      "named case 'divide if even' has status 'failed'",
+      "named case 'even and odd steps' has status 'failed'"
+    ]
+  },
+  "zero_tests": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1",
+      "zero tests executed (numTotalTests == 0)",
+      "expected 7 total tests, got 0",
+      "named case missing: 'zero steps for one'",
+      "named case missing: 'divide if even'",
+      "named case missing: 'even and odd steps'"
+    ]
+  },
+  "child_failure": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1"
+    ]
+  }
+}
