@@ -1,0 +1,11 @@
+--- exercises/practice/sieve/.meta/proof.ci.ts
++++ work/R47-T033/mutant.ts
+@@ -17,7 +17,7 @@
+ 
+     found.push(candidate)
+     let multiple = candidate * candidate
+-    while (multiple <= limit) {
++    while (multiple < limit) {
+       sieve[multiple - 1] = false
+       multiple += candidate
+     }

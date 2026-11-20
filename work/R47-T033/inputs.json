@@ -1,0 +1,41 @@
+{
+  "exercise": "exercises/practice/sieve",
+  "files": {
+    "solution": [
+      "sieve.ts"
+    ],
+    "test": [
+      "sieve.test.ts"
+    ],
+    "example": [
+      ".meta/proof.ci.ts"
+    ]
+  },
+  "expected_cases": 5,
+  "named_cases": [
+    "no primes under two",
+    "find first prime",
+    "find primes up to 10"
+  ],
+  "mutant_file": "work/R47-T033/mutant.ts",
+  "learner_file_hashes_before": {
+    ".docs/hints.md": "6eeccd445d39bb82f6431aa212ce84243a247ff1fab9f5938ac1928800437768",
+    ".docs/instructions.md": "3a2280e9c5f40d20c45ebaddc9615d6635d26afd39de7b744b96c858b6b818c9",
+    ".docs/introduction.md": "b6a0cf428a0136571652f3f47fe7f9f8cff2141431d2811d0d8282b4c011b091",
+    ".meta/config.json": "91ecd6bc9ebdaf595cb812dd74bfd64e4c3bdbefea3d93c23dc553070a074129",
+    ".meta/proof.ci.ts": "13f80081890fe237a12adba5e206e40d36b950e97c6b39edd698a7ccdb90a4f4",
+    ".meta/tests.toml": "b076b1077a1d3aac1a44fd264e83a5efcfb772a1f9e782610266a43d1d62cd5c",
+    ".vscode/extensions.json": "f9fd265401cde8d51fbb7181b4fd05df7b3cc6d0f029f33a56fae97dfd93a9ba",
+    ".vscode/settings.json": "1e411ae5b750c123bd9f628ad0fa9de960efc43b8eef2f0962b0238d4d3e0957",
+    ".yarnrc.yml": "c9a8c149dbb1d29a1aa4da4f52d8b6a054a6d69323729bbb39a8e866a9e3649b",
+    "babel.config.cjs": "95c05efc5100e4251a1f7730763a26b0538af12745d373720e5bc6a457a7bff6",
+    "eslint.config.mjs": "4d8601ad6aa872c60f5c204d98176da6c8694efb8447842b29592c287d49465e",
+    "jest.config.cjs": "4a234463ff36ae3fe67f622e3daed4afb16146387a2a476edb9017a16ee91e7c",
+    "package.json": "23a2ca609902e593f63123b55b6708c3ae3a655e62d89321db8617bb18dd3830",
+    "sieve.test.ts": "95483a2b32450b5fd9bfc2a30671bdbd29121830aab180a60d7e9ee23c2f2262",
+    "sieve.ts": "945d9e78acbb06c75bc4ec9233de7076f31e2e8eda1668d5c6128acd4eb82b9e",
+    "test-runner.mjs": "7c29542703019711d260d0d5648488179df811bc53c33a2d5f7124e88863d4d1",
+    "tsconfig.json": "546734d7d114444c3a3a31a2fff7cd1dfa76f84d1b93db017f264fd3750d7137",
+    "yarn.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

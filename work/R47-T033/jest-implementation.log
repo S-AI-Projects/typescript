@@ -1,0 +1,14 @@
+PASS ./sieve.test.ts
+  Sieve
+    ✓ no primes under two (1 ms)
+    ✓ find first prime
+    ✓ find primes up to 10
+    ✓ limit is prime (1 ms)
+    ✓ find primes up to 1000
+
+Test Suites: 1 passed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        0.175 s
+Ran all test suites.
+Test results written to: ../../../../../../../..<TMP>/jest-results.json

@@ -1,0 +1,51 @@
+{
+  "rejecting_test": "find primes up to 10",
+  "rejecting_uuid": "974945d8-8cd9-4f00-9463-7d813c7f17b7",
+  "minimal_distinguishing_limit": 9,
+  "original_jest_rc": 0,
+  "mutant_jest_rc": 1,
+  "token_diffs": [
+    [
+      126,
+      "<=",
+      "<"
+    ]
+  ],
+  "per_case": [
+    {
+      "title": "no primes under two",
+      "named_case": true,
+      "expected": "passed",
+      "actual_original": "passed",
+      "actual_mutant": "passed"
+    },
+    {
+      "title": "find first prime",
+      "named_case": true,
+      "expected": "passed",
+      "actual_original": "passed",
+      "actual_mutant": "passed"
+    },
+    {
+      "title": "find primes up to 10",
+      "named_case": true,
+      "expected": "passed",
+      "actual_original": "passed",
+      "actual_mutant": "failed"
+    },
+    {
+      "title": "limit is prime",
+      "named_case": false,
+      "expected": "passed",
+      "actual_original": "passed",
+      "actual_mutant": "passed"
+    },
+    {
+      "title": "find primes up to 1000",
+      "named_case": false,
+      "expected": "passed",
+      "actual_original": "passed",
+      "actual_mutant": "failed"
+    }
+  ]
+}

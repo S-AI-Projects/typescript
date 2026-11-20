@@ -1,0 +1,30 @@
+{
+  "assertion_failure": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1",
+      "numFailedTests == 2",
+      "named case 'find primes up to 10' has status 'failed'"
+    ]
+  },
+  "zero_tests": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1",
+      "zero tests executed (numTotalTests == 0)",
+      "expected 5 total tests, got 0",
+      "named case missing: 'no primes under two'",
+      "named case missing: 'find first prime'",
+      "named case missing: 'find primes up to 10'"
+    ]
+  },
+  "child_failure": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1"
+    ]
+  }
+}

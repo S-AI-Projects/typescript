@@ -1,0 +1,37 @@
+[
+  {
+    "title": "no primes under two",
+    "named_case": true,
+    "expected": "passed",
+    "actual_original": "passed",
+    "actual_mutant": "passed"
+  },
+  {
+    "title": "find first prime",
+    "named_case": true,
+    "expected": "passed",
+    "actual_original": "passed",
+    "actual_mutant": "passed"
+  },
+  {
+    "title": "find primes up to 10",
+    "named_case": true,
+    "expected": "passed",
+    "actual_original": "passed",
+    "actual_mutant": "failed"
+  },
+  {
+    "title": "limit is prime",
+    "named_case": false,
+    "expected": "passed",
+    "actual_original": "passed",
+    "actual_mutant": "passed"
+  },
+  {
+    "title": "find primes up to 1000",
+    "named_case": false,
+    "expected": "passed",
+    "actual_original": "passed",
+    "actual_mutant": "failed"
+  }
+]
