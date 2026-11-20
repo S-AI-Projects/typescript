@@ -1,0 +1,41 @@
+{
+  "exercise": "exercises/practice/roman-numerals",
+  "files": {
+    "solution": [
+      "roman-numerals.ts"
+    ],
+    "test": [
+      "roman-numerals.test.ts"
+    ],
+    "example": [
+      ".meta/proof.ci.ts"
+    ]
+  },
+  "expected_cases": 27,
+  "named_cases": [
+    "converts 1",
+    "converts 2",
+    "converts 3"
+  ],
+  "hints_file": "exercises/practice/roman-numerals/.docs/hints.md",
+  "learner_file_hashes_before": {
+    ".docs/hints.md": "a1e8e67433310e2f7a245d78e4e3d342b742838812decd844c201474e2ca67cb",
+    ".docs/instructions.md": "b7756f45216d8908608bcb717d16bf71d804598ab2b179cf52e92468074d8382",
+    ".docs/introduction.md": "4f518139b28ad4079832439bd752e08258d053e54359e307c2d18b171dc7f40e",
+    ".meta/config.json": "cbef978bd967f277c5d8c514d15cc5e414dc745241842bbd22394330fdb4b73d",
+    ".meta/proof.ci.ts": "dab524db1b93a6fa70eb02080c80dcc9a2d29129a058be2508c43a7f3ea023f1",
+    ".meta/tests.toml": "0260ec0831d743509ecff368dbcdf2d1dc3dd2de2a7a7d29c415bc73b081e4c2",
+    ".vscode/extensions.json": "f9fd265401cde8d51fbb7181b4fd05df7b3cc6d0f029f33a56fae97dfd93a9ba",
+    ".vscode/settings.json": "1e411ae5b750c123bd9f628ad0fa9de960efc43b8eef2f0962b0238d4d3e0957",
+    ".yarnrc.yml": "c9a8c149dbb1d29a1aa4da4f52d8b6a054a6d69323729bbb39a8e866a9e3649b",
+    "babel.config.cjs": "95c05efc5100e4251a1f7730763a26b0538af12745d373720e5bc6a457a7bff6",
+    "eslint.config.mjs": "4d8601ad6aa872c60f5c204d98176da6c8694efb8447842b29592c287d49465e",
+    "jest.config.cjs": "4a234463ff36ae3fe67f622e3daed4afb16146387a2a476edb9017a16ee91e7c",
+    "package.json": "a834386c035583eb2e6c7e6bfb9898968460feb428407e992cb2d3be03500bba",
+    "roman-numerals.test.ts": "908aff1e1d1766a9f2ac63644d96476c4cf60129675217f6c5ab0f34449574a9",
+    "roman-numerals.ts": "83fba241a75bc391f7b0b5304a33f817197e6ff68d2cc0fdc0aa2a0b4b5041b3",
+    "test-runner.mjs": "7c29542703019711d260d0d5648488179df811bc53c33a2d5f7124e88863d4d1",
+    "tsconfig.json": "546734d7d114444c3a3a31a2fff7cd1dfa76f84d1b93db017f264fd3750d7137",
+    "yarn.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

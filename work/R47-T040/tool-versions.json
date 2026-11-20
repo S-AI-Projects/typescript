@@ -1,0 +1,12 @@
+{
+  "python": "3.12.16",
+  "node": "v24.22.1",
+  "corepack": "0.36.0",
+  "yarn": "4.5.1",
+  "tsc": "Version 5.6.3",
+  "jest": "29.7.0",
+  "ts_outside_jest_method": "corepack yarn tsc <file> --outDir <tmp>/out --target es2020 --module nodenext --moduleResolution nodenext --strict (no -p)",
+  "os": "Darwin 27.2.0 (arm64)",
+  "git_head": "1ce80b07d40d2d707dd6d651c640774c5c884410",
+  "org_main_sha": "1ce80b07d40d2d707dd6d651c640774c5c884410"
+}

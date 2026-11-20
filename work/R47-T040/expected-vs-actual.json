@@ -1,0 +1,164 @@
+[
+  {
+    "title": "converts 1",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 2",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 3",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 4",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 5",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 6",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 9",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 16",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 27",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 48",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 49",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 59",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 66",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 93",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 141",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 163",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 166",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 402",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 575",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 666",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 911",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 1024",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 1666",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 3000",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 3001",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 3888",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "converts 3999",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  }
+]
