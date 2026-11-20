@@ -1,0 +1,32 @@
+{
+  "assertion_failure": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1",
+      "numFailedTests == 16",
+      "named case 'Ability modifier for score 3 is -4' has status 'failed'",
+      "named case 'Ability modifier for score 4 is -3' has status 'failed'",
+      "named case 'Ability modifier for score 5 is -3' has status 'failed'"
+    ]
+  },
+  "zero_tests": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1",
+      "zero tests executed (numTotalTests == 0)",
+      "expected 25 total tests, got 0",
+      "named case missing: 'Ability modifier for score 3 is -4'",
+      "named case missing: 'Ability modifier for score 4 is -3'",
+      "named case missing: 'Ability modifier for score 5 is -3'"
+    ]
+  },
+  "child_failure": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1"
+    ]
+  }
+}

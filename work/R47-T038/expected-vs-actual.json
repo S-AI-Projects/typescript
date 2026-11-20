@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Ability modifier for score 3 is -4",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 4 is -3",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 5 is -3",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 6 is -2",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 7 is -2",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 8 is -1",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 9 is -1",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 10 is 0",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 11 is 0",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 12 is 1",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 13 is 1",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 14 is 2",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 15 is 2",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 16 is 3",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 17 is 3",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Ability modifier for score 18 is 4",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Random ability is within range",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Random character is valid - hitpoints",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Random character is valid - strength",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Random character is valid - dexterity",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Random character is valid - constitution",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Random character is valid - intelligence",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Random character is valid - wisdom",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Random character is valid - charisma",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Each ability is only calculated once",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  }
+]

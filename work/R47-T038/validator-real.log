@@ -1,0 +1,8 @@
+Exercise: <REPO>/exercises/practice/dnd-character
+role       | path                           | exists
+-----------+--------------------------------+-------
+solution   | dnd-character.ts               | True
+test       | dnd-character.test.ts          | True
+example    | .meta/proof.ci.ts              | True
+
+VALID: all configured file roles resolved and exist inside exercise directory.

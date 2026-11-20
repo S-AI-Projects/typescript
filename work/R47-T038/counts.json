@@ -1,0 +1,12 @@
+{
+  "static_case_count": 25,
+  "expected_cases": 25,
+  "tests_toml_entries": 19,
+  "extra_track_cases": 6,
+  "jest": {
+    "numTotalTests": 25,
+    "numPassedTests": 25,
+    "numFailedTests": 0,
+    "numPendingTests": 0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "exercise": "exercises/practice/dnd-character",
+  "files": {
+    "solution": [
+      "dnd-character.ts"
+    ],
+    "test": [
+      "dnd-character.test.ts"
+    ],
+    "example": [
+      ".meta/proof.ci.ts"
+    ]
+  },
+  "expected_cases": 25,
+  "named_cases": [
+    "Ability modifier for score 3 is -4",
+    "Ability modifier for score 4 is -3",
+    "Ability modifier for score 5 is -3"
+  ],
+  "learner_file_hashes_before": {
+    ".docs/instructions.md": "289bfe2a6471256fd95171707a3a432b7af35ee1b63c01dfa2cf1a613f3118b4",
+    ".docs/introduction.md": "dff0a022809b89edfb055b2f3a5df1f27fe6dec2fadf0a3836185fd16e985a6a",
+    ".meta/config.json": "15077f1b8c7683869889632e060c65202737b658cd3d7e224194d9852a40ab5d",
+    ".meta/proof.ci.ts": "7980abfced9580143235251939b5b8ad260932e06ea1ea8bf6f8af4a67e1afac",
+    ".meta/tests.toml": "a4b86909d5f54080625d7508208fc8505c144a9d66f12634fee83f4b66a4ba8d",
+    ".vscode/extensions.json": "f9fd265401cde8d51fbb7181b4fd05df7b3cc6d0f029f33a56fae97dfd93a9ba",
+    ".vscode/settings.json": "1e411ae5b750c123bd9f628ad0fa9de960efc43b8eef2f0962b0238d4d3e0957",
+    ".yarnrc.yml": "c9a8c149dbb1d29a1aa4da4f52d8b6a054a6d69323729bbb39a8e866a9e3649b",
+    "babel.config.cjs": "95c05efc5100e4251a1f7730763a26b0538af12745d373720e5bc6a457a7bff6",
+    "dnd-character.test.ts": "5fdb8dedc40f03ac3417f10c6b37bad9026651b06b5fcfed60e32dead232c553",
+    "dnd-character.ts": "2949b3e76d88778515a25f18f0748b33b9246d753a615ba32f179dd430020aa7",
+    "eslint.config.mjs": "4d8601ad6aa872c60f5c204d98176da6c8694efb8447842b29592c287d49465e",
+    "jest.config.cjs": "4a234463ff36ae3fe67f622e3daed4afb16146387a2a476edb9017a16ee91e7c",
+    "package.json": "935b735f99b12710c492d8adb0f91cfcde0e5a2b5f1016bec1521936fa364b1a",
+    "test-runner.mjs": "7c29542703019711d260d0d5648488179df811bc53c33a2d5f7124e88863d4d1",
+    "tsconfig.json": "546734d7d114444c3a3a31a2fff7cd1dfa76f84d1b93db017f264fd3750d7137",
+    "yarn.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
