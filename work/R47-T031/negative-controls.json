@@ -1,0 +1,32 @@
+{
+  "assertion_failure": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1",
+      "numFailedTests == 3",
+      "named case 'Add two positive rational numbers' has status 'failed'",
+      "named case 'Add a positive rational number and a negative rational number' has status 'failed'",
+      "named case 'Add two negative rational numbers' has status 'failed'"
+    ]
+  },
+  "zero_tests": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1",
+      "zero tests executed (numTotalTests == 0)",
+      "expected 43 total tests, got 0",
+      "named case missing: 'Add two positive rational numbers'",
+      "named case missing: 'Add a positive rational number and a negative rational number'",
+      "named case missing: 'Add two negative rational numbers'"
+    ]
+  },
+  "child_failure": {
+    "detected": true,
+    "returncode": 1,
+    "failures": [
+      "non-zero exit code: 1"
+    ]
+  }
+}

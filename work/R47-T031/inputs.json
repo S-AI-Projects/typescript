@@ -1,0 +1,38 @@
+{
+  "exercise": "exercises/practice/rational-numbers",
+  "files": {
+    "solution": [
+      "rational-numbers.ts"
+    ],
+    "test": [
+      "rational-numbers.test.ts"
+    ],
+    "example": [
+      ".meta/proof.ci.ts"
+    ]
+  },
+  "expected_cases": 43,
+  "named_cases": {
+    "0ba4d988-044c-4ed5-9215-4d0bb8d0ae9f": "Add two positive rational numbers",
+    "88ebc342-a2ac-4812-a656-7b664f718b6a": "Add a positive rational number and a negative rational number",
+    "92ed09c2-991e-4082-a602-13557080205c": "Add two negative rational numbers"
+  },
+  "learner_file_hashes_before": {
+    ".docs/instructions.md": "982aefbb4814ff536d58bd076f3ee21ead2bb0c893d8cb776b8818eaabbc980d",
+    ".meta/config.json": "6075ec36f652d646c2750b5a387f51083f0e1dbbd27d5cbd9b54954bb96bb11e",
+    ".meta/proof.ci.ts": "690024f01c21176e81f7235e4ec78e32d7f91551286ab0d185f71931f77a8157",
+    ".meta/tests.toml": "3beb8ced44d5f6d1e14bf8830e9ff0812dd97ddbb46a390483aca698e78d4cfc",
+    ".vscode/extensions.json": "f9fd265401cde8d51fbb7181b4fd05df7b3cc6d0f029f33a56fae97dfd93a9ba",
+    ".vscode/settings.json": "1e411ae5b750c123bd9f628ad0fa9de960efc43b8eef2f0962b0238d4d3e0957",
+    ".yarnrc.yml": "c9a8c149dbb1d29a1aa4da4f52d8b6a054a6d69323729bbb39a8e866a9e3649b",
+    "babel.config.cjs": "95c05efc5100e4251a1f7730763a26b0538af12745d373720e5bc6a457a7bff6",
+    "eslint.config.mjs": "4d8601ad6aa872c60f5c204d98176da6c8694efb8447842b29592c287d49465e",
+    "jest.config.cjs": "4a234463ff36ae3fe67f622e3daed4afb16146387a2a476edb9017a16ee91e7c",
+    "package.json": "f4bdb29124b5a00a96543f2536102a4cbf7f5b72ac4313e4e2d27347e58a0357",
+    "rational-numbers.test.ts": "5b7daaf96e36e52df37a4c817dc92ffad4c40b9085468ef937f41fd809a37929",
+    "rational-numbers.ts": "f9a46077f254177b0175f5c37825aaf707d2464c49039df967d79dd65884bb39",
+    "test-runner.mjs": "7c29542703019711d260d0d5648488179df811bc53c33a2d5f7124e88863d4d1",
+    "tsconfig.json": "546734d7d114444c3a3a31a2fff7cd1dfa76f84d1b93db017f264fd3750d7137",
+    "yarn.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
