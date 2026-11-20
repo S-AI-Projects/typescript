@@ -1,0 +1,136 @@
+{
+  "results": {
+    "checks": {
+      "stub_is_unsolved": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_md_exists": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_has_anchor_case_1": {
+        "ok": true,
+        "detail": "Missing anchor case 1 (single bit one to decimal)"
+      },
+      "hints_has_anchor_case_2": {
+        "ok": true,
+        "detail": "Missing anchor case 2 (binary to single decimal)"
+      },
+      "hints_has_anchor_case_3": {
+        "ok": true,
+        "detail": "Missing anchor case 3 (single decimal to binary)"
+      },
+      "hints_has_horner": {
+        "ok": true,
+        "detail": "Missing Horner's method explanation"
+      },
+      "hints_has_special_cases": {
+        "ok": true,
+        "detail": "Missing special cases table"
+      },
+      "hints_has_wrong_input_base_note": {
+        "ok": true,
+        "detail": "Missing wrong input base note"
+      },
+      "test:single bit one to decimal": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:binary to single decimal": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:single decimal to binary": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:binary to multiple decimal": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:decimal to binary": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:trinary to hexadecimal": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:hexadecimal to trinary": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:15-bit integer": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:empty list": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:single zero": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:multiple zeros": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:leading zeros": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:negative digit": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:invalid positive digit": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:first base is one": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:second base is one": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:first base is zero": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:second base is zero": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:first base is negative": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:second base is negative": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:both bases are negative": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:wrong output_base base not integer": {
+        "ok": true,
+        "detail": ""
+      },
+      "total_tests_22": {
+        "ok": true,
+        "detail": "Got 22/22"
+      }
+    },
+    "passed": 31,
+    "failed": 0,
+    "total_passed_ref": 22
+  },
+  "tool_versions": {
+    "node": "v26.12.1"
+  }
+}
