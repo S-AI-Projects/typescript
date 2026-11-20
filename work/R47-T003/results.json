@@ -1,0 +1,51 @@
+{
+  "task_id": "R47-T003",
+  "exercise": "exercises/practice/list-ops",
+  "tool_versions": {
+    "node": "v26.12.1",
+    "python": "3.15.2",
+    "yarn": "4.5.1"
+  },
+  "named_cases": [
+    "empty lists",
+    "list to empty list",
+    "empty list to list"
+  ],
+  "original_results": {
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "executed_titles": [
+      "empty lists",
+      "list to empty list",
+      "empty list to list",
+      "non-empty lists",
+      "empty list",
+      "list of lists",
+      "empty list",
+      "non empty list",
+      "empty list",
+      "non-empty list",
+      "empty list",
+      "non-empty list",
+      "empty list",
+      "direction independent function applied to non-empty list",
+      "direction dependent function applied to non-empty list",
+      "empty list",
+      "direction independent function applied to non-empty list",
+      "direction dependent function applied to non-empty list",
+      "empty list",
+      "non-empty list",
+      "list of lists is not flattened"
+    ]
+  },
+  "mutant_results": {
+    "mutant_return_code": 1,
+    "failed_titles": [
+      "empty list to list",
+      "list of lists"
+    ],
+    "rejecting_case": "empty list to list"
+  },
+  "status": "PASSED"
+}
