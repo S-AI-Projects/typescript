@@ -11,12 +11,15 @@
 
 [0ba4d988-044c-4ed5-9215-4d0bb8d0ae9f]
 description = "Arithmetic -> Addition -> Add two positive rational numbers"
+comment = "Included: 'Add two positive rational numbers' tests Rational.add cross-multiplication, gcd reduction, and positive-denominator standard form for positive inputs."
 
 [88ebc342-a2ac-4812-a656-7b664f718b6a]
 description = "Arithmetic -> Addition -> Add a positive rational number and a negative rational number"
+comment = "Included: 'Add a positive rational number and a negative rational number' tests Rational.add with mixed signs, negative-dividend % in gcd, and sign normalization."
 
 [92ed09c2-991e-4082-a602-13557080205c]
 description = "Arithmetic -> Addition -> Add two negative rational numbers"
+comment = "Included: 'Add two negative rational numbers' tests Rational.add when both operands are negative, verifying negative-sum reduction and sign placement in numerator."
 
 [6e58999e-3350-45fb-a104-aac7f4a9dd11]
 description = "Arithmetic -> Addition -> Add a rational number to its additive inverse"

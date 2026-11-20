@@ -1,0 +1,22 @@
+{
+  "static_case_count": 43,
+  "expected_cases": 43,
+  "jest": {
+    "numTotalTests": 43,
+    "numPassedTests": 43,
+    "numFailedTests": 0,
+    "numPendingTests": 0
+  },
+  "tests_toml": {
+    "before": {
+      "total": 43,
+      "included": 43,
+      "excluded": 0
+    },
+    "after": {
+      "total": 43,
+      "included": 43,
+      "excluded": 0
+    }
+  }
+}
