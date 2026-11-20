@@ -1,0 +1,74 @@
+{
+  "task_id": "R47-T005",
+  "exercise": "exercises/practice/rna-transcription",
+  "tool_versions": {
+    "node": "v26.12.1",
+    "python": "3.15.2",
+    "yarn": "4.5.1"
+  },
+  "named_cases": [
+    "transcribes cytosine to guanine",
+    "transcribes guanine to cytosine",
+    "transcribes adenine to uracil"
+  ],
+  "bench_results": {
+    "N1": {
+      "input_size": 1,
+      "repetitions": [
+        0.155292,
+        0.195042,
+        0.196458,
+        0.243917,
+        0.248083,
+        0.269083,
+        0.468125
+      ],
+      "median_ms_for_10k_calls": 0.243917,
+      "avg_ns_per_call": 24.3917
+    },
+    "N4": {
+      "input_size": 4,
+      "repetitions": [
+        0.386584,
+        0.4215,
+        0.425125,
+        0.43625,
+        0.440958,
+        0.47175,
+        0.473709
+      ],
+      "median_ms_for_10k_calls": 0.43625,
+      "avg_ns_per_call": 43.625
+    },
+    "N12": {
+      "input_size": 12,
+      "repetitions": [
+        1.123541,
+        1.146667,
+        1.183125,
+        1.208208,
+        1.213792,
+        1.216125,
+        1.241667
+      ],
+      "median_ms_for_10k_calls": 1.208208,
+      "avg_ns_per_call": 120.8208
+    }
+  },
+  "test_results": {
+    "total_executed": 8,
+    "passed": 8,
+    "failed": 0,
+    "executed_titles": [
+      "transcribes cytosine to guanine",
+      "transcribes guanine to cytosine",
+      "transcribes adenine to uracil",
+      "transcribes thymine to adenine",
+      "transcribes all dna nucleotides to their rna complements",
+      "correctly handles invalid input",
+      "correctly handles completely invalid input",
+      "correctly handles partially invalid input"
+    ]
+  },
+  "status": "PASSED"
+}
