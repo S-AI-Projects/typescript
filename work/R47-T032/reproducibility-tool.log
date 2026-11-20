@@ -1,0 +1,4 @@
+PASS: tmp_exercises/accumulate.test.ts identical across both copies (sha256=6dd655a3d6b112324c9667e28096c184658f5cadc00f0b55cd9500c2c843bead)
+PASS: tmp_exercises/accumulate.test.ts equals enable_all(source test)
+PASS: tmp_exercises/accumulate.ts identical across both copies (sha256=3fe906118b88554c2b647fda94a64e398033a837691d8444329668c26fe5032e)
+RESULT: PASS - practice/accumulate prepare() outputs are byte-for-byte reproducible

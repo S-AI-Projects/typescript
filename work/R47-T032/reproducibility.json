@@ -1,0 +1,24 @@
+{
+  "exercise": "practice/accumulate",
+  "rev": "org/main",
+  "rev_sha": "1ce80b07d40d2d707dd6d651c640774c5c884410",
+  "normalization": "identity (no timestamps or run-specific tokens exist in prepare() outputs)",
+  "reproducible": true,
+  "files": {
+    "accumulate.test.ts": {
+      "copy1_sha256": "6dd655a3d6b112324c9667e28096c184658f5cadc00f0b55cd9500c2c843bead",
+      "copy2_sha256": "6dd655a3d6b112324c9667e28096c184658f5cadc00f0b55cd9500c2c843bead",
+      "identical": true,
+      "byte_length": 1306,
+      "diff": "",
+      "equals_enable_all": true
+    },
+    "accumulate.ts": {
+      "copy1_sha256": "3fe906118b88554c2b647fda94a64e398033a837691d8444329668c26fe5032e",
+      "copy2_sha256": "3fe906118b88554c2b647fda94a64e398033a837691d8444329668c26fe5032e",
+      "identical": true,
+      "byte_length": 219,
+      "diff": ""
+    }
+  }
+}

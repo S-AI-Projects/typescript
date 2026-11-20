@@ -1,0 +1,10 @@
+{
+  "static_case_count": 5,
+  "expected_cases": 5,
+  "jest": {
+    "numTotalTests": 5,
+    "numPassedTests": 5,
+    "numFailedTests": 0,
+    "numPendingTests": 0
+  }
+}

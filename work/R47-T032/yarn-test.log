@@ -1,0 +1,16 @@
+[tests] tsc: ✅, tstyche: ❌, jest: ✅, 
+[tests] tsc (compile)
+[tests] tstyche (implementation tests)
+PASS ./accumulate.test.ts
+  accumulate()
+    ✓ accumulation empty (1 ms)
+    ✓ accumulate squares
+    ✓ accumulate upcases
+    ✓ accumulate reversed strings (1 ms)
+    ✓ accumulate recursively
+
+Test Suites: 1 passed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        0.173 s
+Ran all test suites.
