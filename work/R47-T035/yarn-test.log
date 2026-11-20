@@ -1,0 +1,24 @@
+[tests] tsc: ✅, tstyche: ❌, jest: ✅, 
+[tests] tsc (compile)
+[tests] tstyche (implementation tests)
+PASS ./darts.test.ts
+  Darts
+    ✓ Missed target (1 ms)
+    ✓ On the outer circle
+    ✓ On the middle circle (1 ms)
+    ✓ On the inner circle
+    ✓ Exactly on centre
+    ✓ Near the centre
+    ✓ Just within the inner circle
+    ✓ Just outside the inner circle
+    ✓ Just within the middle circle
+    ✓ Just outside the middle circle
+    ✓ Just within the outer circle
+    ✓ Just outside the outer circle
+    ✓ Asymmetric position between the inner and middle circles
+
+Test Suites: 1 passed, 1 total
+Tests:       13 passed, 13 total
+Snapshots:   0 total
+Time:        0.182 s
+Ran all test suites.

@@ -1,0 +1,117 @@
+{
+  "sink": 113600000,
+  "instrumented": [
+    {
+      "name": "Missed target",
+      "x": -9,
+      "y": 9,
+      "points": 0,
+      "multiplications": 2,
+      "additions": 1,
+      "sqrt_calls": 1,
+      "comparisons": 1,
+      "return_branch": "return 0"
+    },
+    {
+      "name": "On the outer circle",
+      "x": 0,
+      "y": 10,
+      "points": 1,
+      "multiplications": 2,
+      "additions": 1,
+      "sqrt_calls": 1,
+      "comparisons": 2,
+      "return_branch": "return 1"
+    },
+    {
+      "name": "On the middle circle",
+      "x": -5,
+      "y": 0,
+      "points": 5,
+      "multiplications": 2,
+      "additions": 1,
+      "sqrt_calls": 1,
+      "comparisons": 3,
+      "return_branch": "return 5"
+    },
+    {
+      "name": "On the inner circle",
+      "x": 0,
+      "y": -1,
+      "points": 10,
+      "multiplications": 2,
+      "additions": 1,
+      "sqrt_calls": 1,
+      "comparisons": 3,
+      "return_branch": "return 10"
+    }
+  ],
+  "timings": [
+    {
+      "name": "Missed target",
+      "points": 0,
+      "n_calls": 1000000,
+      "reps": 7,
+      "per_rep_ns": [
+        2.220166,
+        2.685042,
+        2.650417,
+        0.591833,
+        0.595625,
+        0.6015,
+        0.521917
+      ],
+      "median_ns_per_call": 0.6015
+    },
+    {
+      "name": "On the outer circle",
+      "points": 1,
+      "n_calls": 1000000,
+      "reps": 7,
+      "per_rep_ns": [
+        2.9205,
+        3.024875,
+        0.829,
+        0.826833,
+        0.824,
+        0.82525,
+        0.826791
+      ],
+      "median_ns_per_call": 0.826833
+    },
+    {
+      "name": "On the middle circle",
+      "points": 5,
+      "n_calls": 1000000,
+      "reps": 7,
+      "per_rep_ns": [
+        3.557958,
+        1.67975,
+        0.954334,
+        0.828458,
+        0.706833,
+        0.702291,
+        0.70225
+      ],
+      "median_ns_per_call": 0.828458
+    },
+    {
+      "name": "On the inner circle",
+      "points": 10,
+      "n_calls": 1000000,
+      "reps": 7,
+      "per_rep_ns": [
+        0.93925,
+        0.939541,
+        0.939167,
+        0.939167,
+        0.939166,
+        0.936333,
+        0.9455
+      ],
+      "median_ns_per_call": 0.939167
+    }
+  ],
+  "tsc_compile_ms": 1140.68,
+  "node_startup_ms": 22.372
+}

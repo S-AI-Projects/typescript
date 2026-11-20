@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Missed target",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "On the outer circle",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "On the middle circle",
+    "named_case": true,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "On the inner circle",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Exactly on centre",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Near the centre",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Just within the inner circle",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Just outside the inner circle",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Just within the middle circle",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Just outside the middle circle",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Just within the outer circle",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Just outside the outer circle",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  },
+  {
+    "title": "Asymmetric position between the inner and middle circles",
+    "named_case": false,
+    "expected": "passed",
+    "actual": "passed"
+  }
+]
