@@ -1,0 +1,36 @@
+PASS ./dnd-character.test.ts
+  Ability modifier
+    ✓ Ability modifier for score 3 is -4
+    ✓ Ability modifier for score 4 is -3
+    ✓ Ability modifier for score 5 is -3
+    ✓ Ability modifier for score 6 is -2
+    ✓ Ability modifier for score 7 is -2
+    ✓ Ability modifier for score 8 is -1
+    ✓ Ability modifier for score 9 is -1
+    ✓ Ability modifier for score 10 is 0
+    ✓ Ability modifier for score 11 is 0
+    ✓ Ability modifier for score 12 is 1 (1 ms)
+    ✓ Ability modifier for score 13 is 1
+    ✓ Ability modifier for score 14 is 2
+    ✓ Ability modifier for score 15 is 2
+    ✓ Ability modifier for score 16 is 3
+    ✓ Ability modifier for score 17 is 3
+    ✓ Ability modifier for score 18 is 4
+  Ability generator
+    ✓ Random ability is within range
+  Character creation
+    ✓ Random character is valid - hitpoints
+    ✓ Random character is valid - strength
+    ✓ Random character is valid - dexterity
+    ✓ Random character is valid - constitution
+    ✓ Random character is valid - intelligence
+    ✓ Random character is valid - wisdom
+    ✓ Random character is valid - charisma
+    ✓ Each ability is only calculated once
+
+Test Suites: 1 passed, 1 total
+Tests:       25 passed, 25 total
+Snapshots:   0 total
+Time:        0.18 s
+Ran all test suites.
+Test results written to: ../../../../../../../..<TMP>/jest-results.json

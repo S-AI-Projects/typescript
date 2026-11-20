@@ -1,0 +1,25 @@
+{
+  "real": {
+    "returncode": 0,
+    "passed": true,
+    "stdout": "Exercise: <REPO>/exercises/practice/dnd-character\nrole       | path                           | exists\n-----------+--------------------------------+-------\nsolution   | dnd-character.ts               | True\ntest       | dnd-character.test.ts          | True\nexample    | .meta/proof.ci.ts              | True\n\nVALID: all configured file roles resolved and exist inside exercise directory.\n"
+  },
+  "missing_example": {
+    "returncode": 1,
+    "expected_error_code": "ERR_MISSING_FILE:example",
+    "failed_for_intended_reason": true,
+    "output": "Exercise: <TMP>/fixtures/missing_example\nrole       | path                           | exists\n-----------+--------------------------------+-------\nsolution   | dnd-character.ts               | True\ntest       | dnd-character.test.ts          | True\nexample    | .meta/nonexistent-proof.ci.ts  | False\n\nErrors:\n  - ERR_MISSING_FILE:example: '.meta/nonexistent-proof.ci.ts' not found at /private<TMP>/fixtures/missing_example/.meta/nonexistent-proof.ci.ts\n"
+  },
+  "missing_test": {
+    "returncode": 1,
+    "expected_error_code": "ERR_MISSING_FILE:test",
+    "failed_for_intended_reason": true,
+    "output": "Exercise: <TMP>/fixtures/missing_test\nrole       | path                           | exists\n-----------+--------------------------------+-------\nsolution   | dnd-character.ts               | True\ntest       | missing.test.ts                | False\nexample    | .meta/proof.ci.ts              | True\n\nErrors:\n  - ERR_MISSING_FILE:test: 'missing.test.ts' not found at /private<TMP>/fixtures/missing_test/missing.test.ts\n"
+  },
+  "outside_escape": {
+    "returncode": 1,
+    "expected_error_code": "ERR_PARENT_TRAVERSAL:solution",
+    "failed_for_intended_reason": true,
+    "output": "Exercise: <TMP>/fixtures/outside_escape\nrole       | path                           | exists\n-----------+--------------------------------+-------\nsolution   | ../two-fer/two-fer.ts          | False\ntest       | dnd-character.test.ts          | True\nexample    | .meta/proof.ci.ts              | True\n\nErrors:\n  - ERR_PARENT_TRAVERSAL:solution: '../two-fer/two-fer.ts' contains '..'\n"
+  }
+}
