@@ -1,0 +1,77 @@
+{
+  "results": {
+    "checks": {
+      "stub_is_unsolved": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_md_exists": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_has_keyof_typeof": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_has_planet_union": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_has_static_vs_runtime": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_has_toFixed": {
+        "ok": true,
+        "detail": ""
+      },
+      "hints_has_earth_year": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:age on Earth": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:age on Mercury": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:age on Venus": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:age on Mars": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:age on Jupiter": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:age on Saturn": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:age on Uranus": {
+        "ok": true,
+        "detail": ""
+      },
+      "test:age on Neptune": {
+        "ok": true,
+        "detail": ""
+      },
+      "total_tests_8": {
+        "ok": true,
+        "detail": "Got 8/8"
+      }
+    },
+    "passed": 16,
+    "failed": 0,
+    "total_passed_ref": 8
+  },
+  "tool_versions": {
+    "node": "v26.12.1",
+    "yarn": ""
+  }
+}
